@@ -1,0 +1,136 @@
+doctype html
+html(lang="ru")
+	include _head
+
+	body
+		#shikarniy
+			.sidebar
+				.logo
+					a(href="#")
+				.user
+					a(href="#").settings.hoverbg
+						.icon
+							.act
+					.age.man (22)
+					.pic
+						img(src="img/content/user-ava.png", alt="")
+					.name анастасия <br>Романовская
+					.contacts
+						div.phone 8 (916) 364-85-92
+						div.email
+							a(href="#") anastas@mail.com
+				.menu
+					ul
+						li.home
+							a(href="#") Мой профиль
+						li.career.active
+							a(href="#") Моя карьера
+						li.work
+							a(href="#") Моя работа
+						li.educ
+							a(href="#") Мое образование
+				.logo-ibs
+					a(href="#")
+			//-----------------------------------------------
+			.main-page
+				.topper
+					.main-width
+						.info
+							.exit
+								a(href="#")
+									.icon
+							.notafication
+								a(href="#")
+									.icon
+									.count 16
+						.search
+							form(action="#")
+								input(type="text", placeholder="Поиск").filed
+								input(type="submit", value="").submit
+				//-----------------------------------------------
+				
+				.main-width
+					.wbox
+						.wbox-name.no-bd
+							h2 атлас профессий
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.atlas-box
+								.atlas-search
+									.search
+										.ins
+											input(type="text", placeholder="Поиск").filed
+											input(type="submit", value="").submit
+									.link
+										a(href="#").open-atlas-circle
+											img(src="img/main/i-circle-color-b.png", alt="")
+									.cats
+										.select-wrap
+											input(type="hidden" name="" value="")
+											.select
+												span.title Желаемая должность
+												span.arrow
+											ul.option-list
+												li(data-value="1") Начальник
+												li(data-value="2") Специалист
+												li(data-value="2") Рабочий
+												li(data-value="2") Человек с Большой буквы
+												li(data-value="2") Доброта
+							.profession-recom
+								.box.simular.mrg
+									table
+										tr.top
+											td.name Название профессии
+											td.pic
+											td.code Код
+											td.rating Рейтинг
+										tr
+											td.name Помощник бурильщика плавучего бурильного агрегата в море
+											td.pic
+												a(href="#") 
+													img(src="img/main/i-circle-color.png", alt="")
+											td.code 16839
+											td.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li
+										tr
+											td.name Оператор по подготовке скважин к капитальному и подземному ремонтам
+											td.pic
+												a(href="#")
+													img(src="img/main/i-circle-color.png", alt="")
+											td.code 78451
+											td.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li.full
+				//-----------------------------------------------
+				.atlas-circle
+					.ins
+						.ins2
+							.ins-content
+								.close
+									a(href="#").close-atlas-circle
+								.circle
+									a(href="#") 
+										img(src="img/main/circle-color-b.png", alt="")
+								.content
+									.content-name Человек-Техника
+									.text Вид трудовой деятельности человека, который требует определенного уровня специальных знаний и умений (квалификации). Инженер - это специалист с высшим техническим образованием. В России каждый третий дипломированный специалист с высшим образованием является инженером.
+									.selected
+										h3 Выбранные направления
+										.item
+											.name Человек техника
+											.del
+												a(href="#")
+								.apply
+									a(href="#").btn-blue Применить 

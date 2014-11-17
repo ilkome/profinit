@@ -1,0 +1,465 @@
+doctype html
+html(lang="ru")
+	include _head
+	script(src="js/jquery.slideRow.js", type="text/javascript")
+
+	body
+		#shikarniy
+			.sidebar
+				.logo
+					a(href="#")
+				.user
+					a(href="#").settings.hoverbg
+						.icon
+							.act
+					.pic
+						img(src="img/content/user-ava2.png", alt="")
+					.name Томский базовый <br>Медицинский колледж
+					.contacts
+						div.phone 8 (916) 364-85-92
+						div.email
+							a(href="#") anastas@mail.com
+						div.site
+							a(href="#") www.tbmk.com
+				.menu
+					ul
+						li.home
+							a(href="#") Мой профиль
+						li.educ.vac
+							a(href="#") Профессиональное <br>образование
+						li.educ-ext.vac.active
+							a(href="#") Дополнительное Профессиональное образование
+				.logo-ibs
+					a(href="#")
+			//-----------------------------------------------
+			.main-page
+				.atlas-circle
+					.ins
+						.ins2
+							.ins-content
+								.close
+									a(href="#").close-atlas-circle
+								.circle
+									a(href="#") 
+										img(src="img/main/circle-color-b.png", alt="")
+								.content
+									.content-name Человек-Техника
+									.text Вид трудовой деятельности человека, который требует определенного уровня специальных знаний и умений (квалификации). Инженер - это специалист с высшим техническим образованием. В России каждый третий дипломированный специалист с высшим образованием является инженером.
+									.selected
+										h3 Выбранные направления
+										.item
+											.name Человек техника
+											.del
+												a(href="#")
+								.apply
+									a(href="#").btn-blue Применить 
+				//-----------------------------------------------
+				.topper
+					.main-width
+						.info
+							.exit
+								a(href="#")
+									.icon
+							.notafication
+								a(href="#")
+									.icon
+									.count 16
+						.search
+							form(action="#")
+								input(type="text", placeholder="Поиск").filed
+								input(type="submit", value="").submit
+				//-----------------------------------------------
+				.main-width 
+					.wbox
+						.wbox-name
+							h2 Текущая работа
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-work-cuurent2
+								.item
+									.info
+										h3 Проектировщик коммуникационных систем
+										.price 1 000 000 Р
+									.univ
+										.text
+											p
+												a(href="#") ООО “Первая открытая <br>типография” 
+											p Проектирование систем
+										.prev
+											img(src="img/content/logo-1.png", alt="")
+					//------------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Текущее образование
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-educ-cuurent
+								.item
+									.info
+										h3 Проектировщик коммуникационных систем
+										p.blue Студент-бакалавр
+										p 3 курс
+									.univ
+										.text
+											p
+												a(href="#") Томский базовый колледж
+											p 
+												strong Факультет:  
+												| Физико-химической индустрии
+											p
+												strong Кафедра:  
+												| Экономика и менеджмент в&nbsp;принтмедиатехнологиях
+										.prev
+											img(src="img/content/logo-1.png", alt="")
+					//------------------------------------------------
+					.wbox.grey
+						.wbox-name
+							h2 Мое ближайшие цели
+						.wbox-menu
+							a(href="#").hoverbg 
+								.icon
+									.act
+						.wbox-content
+							.wbox-coming-targets
+								.ins
+									a(href="#").slider-nav.left.hoverbg
+										.icon
+											.act
+									a(href="#").slider-nav.right.hoverbg
+										.icon
+											.act
+									.slider
+										.slide
+											.info
+												.name Начальник отдела
+												.desc Январь 2015
+											.profit
+												.name Информационные технологии
+												.desc
+													.va Доход
+													.count 1 000 000
+													.sep 
+													.count 2 000 000
+										.slide
+											.info
+												.name Начальник отдела
+												.desc Январь 2015
+											.profit
+												.name Информационные технологии
+												.desc
+													.va Доход
+													.count 1 000 000
+													.sep 
+													.count 2 000 000
+										.slide
+											.info
+												.name Начальник отдела
+												.desc Январь 2015
+											.profit
+												.name Информационные технологии
+												.desc
+													.va Доход
+													.count 1 000 000
+													.sep 
+													.count 2 000 000
+									.bg
+								.cup
+									.bdin
+										.prev
+											img(src="img/main/i-cup.png", alt="")
+								.links
+									a(href="#") Карьерная траектория
+									span.sep
+									a(href="#") Атлас профессий
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Рекомендуемое образование
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-educ-recommend
+								.ratings
+									a(href="#").hoverbg
+										.icon
+											.act
+
+										.name Рейтинг вакансий
+									a(href="#").hoverbg
+										.icon
+											.act
+										.name Рейтинг работадателей
+								.table-wrap
+									table
+										thead
+											tr
+												td.nametd Направление подготовки 
+												td.companytd Компания
+												td.pricetd Стоимость
+										tbody
+											tr
+												td
+													a(href="#").name Прокладчик телевизионных сетей
+													a(href="#").open-atlas-circle
+												td.companytd ОАО “Первая компания”
+												td.pricetd
+													span.price 1 000 000 Р
+											tr
+												td
+													a(href="#").name Специалист по управлению качеством
+													a(href="#").open-atlas-circle
+												td.companytd ОАО “РедГринт”
+												td.pricetd
+													span.price 1 000 000 Р
+											tr
+												td
+													a(href="#").name Проектировщик коммуникационных систем
+													a(href="#").open-atlas-circle
+												td.companytd ОАО “Первая компания”
+												td.pricetd
+													span.price 1 000 000 Р
+											tr.item.hide
+												td
+													a(href="#").name Специалист по управлению качеством
+													a(href="#").open-atlas-circle
+												td.companytd ОАО “РедГринт”
+												td.pricetd
+													span.price 1 000 000 Р
+											tr.item.hide
+												td
+													a(href="#").name Специалист по управлению качеством
+													a(href="#").open-atlas-circle
+												td.companytd ОАО “Первая компания”
+												td.pricetd
+													span.price 1 000 000 Р
+											tr.item.hide
+												td
+													a(href="#").name Специалист по управлению качеством
+													a(href="#").open-atlas-circle
+												td.companytd ОАО “РедГринт”
+												td.pricetd
+													span.price 1 000 000 Р
+
+							.wbox-more.margn-side.table-items
+								a(href="#") показать еще
+					//------------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Работа
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-work-cuurent
+								.item
+									.table
+										.info
+											h3 Проектировщик коммуникационных&nbsp;систем
+											p
+												a(href="#") Сбербанк России
+											p <strong>Отрасль:</strong> Экономика и менеджмент в&nbsp;принтмедиатехнологиях 
+										.prev
+											img(src="img/content/msu.png", alt="")
+									.money
+										| Зарплата: 
+										span 1 000 000 Р  
+								.item
+									.table
+										.info
+											h3 Томский базовый колледж
+											p
+												a(href="#")  МГУП им. Ивана федорова
+											p <strong>Факультет:</strong> Физико-химической индустрии
+											p Студент 3 курс
+										.prev
+											img(src="img/content/msu.png", alt="")
+									.money
+										| Зарплата: 
+										span 53 000 Р
+					//-----------------------------------------------
+					.tbox
+						.tbox-name
+							h2 Рекомендуемое образование
+						.tbox-content
+							.tbox-educ-recommend
+								.item
+									table
+										tr
+											td.logo
+												img(src="img/content/logo-educ.png", alt="")
+											td.name
+												h3 МГУ им. ломоносова
+												a(href="#") Прикладная физика 
+											td.date
+												p Магистратура
+												p
+													strong Срок обучения 3 года
+											td.price
+												span 100 000 P
+								.item
+									table
+										tr
+											td.logo
+												img(src="img/content/logo-educ.png", alt="")
+											td.name
+												h3 МГУ им. ломоносова МГУ им. ломоносова
+												a(href="#") Прикладная физика Прикладная физика Прикладная физика 
+											td.date
+												p Магистратура
+												p
+													strong Срок обучения 3 года
+											td.price
+												span 100 000 P
+								.item
+									table
+										tr
+											td.logo
+												img(src="img/content/logo-educ.png", alt="")
+											td.name
+												h3 МГУ им. ломоносова
+												a(href="#") Прикладная физика 
+											td.date
+												p Магистратура
+												p
+													strong Срок обучения 3 года
+											td.price
+												span 100 000 P
+								.item.hide
+									table
+										tr
+											td.logo
+												img(src="img/content/logo-educ.png", alt="")
+											td.name
+												h3 МГУ им. ломоносова
+												a(href="#") Прикладная физика 
+											td.date
+												p Магистратура
+												p
+													strong Срок обучения 3 года
+											td.price
+												span 100 000 P
+								.item.hide
+									table
+										tr
+											td.logo
+												img(src="img/content/logo-educ.png", alt="")
+											td.name
+												h3 МГУ им. ломоносова МГУ им. ломоносова
+												a(href="#") Прикладная физика Прикладная физика Прикладная физика 
+											td.date
+												p Магистратура
+												p
+													strong Срок обучения 3 года
+											td.price
+												span 100 000 P
+								.item.hide
+									table
+										tr
+											td.logo
+												img(src="img/content/logo-educ.png", alt="")
+											td.name
+												h3 МГУ им. ломоносова
+												a(href="#") Прикладная физика 
+											td.date
+												p Магистратура
+												p
+													strong Срок обучения 3 года
+											td.price
+												span 100 000 P
+							.tbox-more
+								a(href="#") Показать еще
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Рекомендуемое образование
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-educ-recommend
+								.ratings
+									a(href="#").hoverbg
+										.icon
+											.act
+
+										.name Рейтинг образовательных организаций
+									a(href="#").hoverbg
+										.icon
+											.act
+										.name Рейтинг образовательных программ
+								.table-wrap
+									table
+										thead
+											tr
+												td.nametd Направление подготовки 
+												td.companytd Уровень образования /<br>Вид ДПО
+												td.timetd Срок обучения
+												td.pricetd Стоимость
+										tbody
+											tr
+												td
+													h3 Физика элементарных частиц
+													a(href="#") МГУ им. Ломоносова
+												td.companytd 
+													a(href="#") Магистратура
+												td.timetd 5 месцев
+												td.pricetd
+													span.price 1 000 000 Р
+											tr
+												td
+													h3 Прикладная физика
+													a(href="#") МГУ им. Ломоносова
+												td.companytd
+													a(href="#") Курсы по повышению квалификации
+												td.timetd 5 лет
+												td.pricetd
+													span.price 1 000 000 Р
+											tr
+												td
+													h3 Физика элементарных частиц
+													a(href="#") МГУ им. Ломоносова
+												td.companytd 
+													a(href="#") Магистратура
+												td.timetd 2 года
+												td.pricetd
+													span.price 1 000 000 Р
+											tr.item.hide
+												td
+													h3 Физика элементарных частиц
+													a(href="#") МГУ им. Ломоносова
+												td.companytd
+													a(href="#") Курсы по повышению квалификации
+												td.timetd 5 лет
+												td.pricetd
+													span.price 1 000 000 Р
+											tr.item.hide
+												td
+													h3 Физика элементарных частиц
+													a(href="#") МГУ им. Ломоносова
+												td.companytd 
+													a(href="#") Магистратура
+												td.timetd 5 лет
+												td.pricetd
+													span.price 1 000 000 Р
+											tr.item.hide
+												td
+													h3 Физика элементарных частиц
+													a(href="#") МГУ им. Ломоносова
+												td.companytd
+													a(href="#") Курсы по повышению квалификации
+												td.timetd 20 дней
+												td.pricetd
+													span.price 1 000 000 Р
+
+							.wbox-more.margn-side.table-items
+								a(href="#") показать еще

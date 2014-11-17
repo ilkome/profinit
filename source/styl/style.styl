@@ -1,0 +1,2183 @@
+/*
+	proscom.ru
+	Простые Коммуникации
+*/
+@import "common.styl"
+
+
+
+//	Основные стили
+// ===============================================
+min-height = "screen and (min-height: 768px)"
+body
+	position relative; 
+	min-height 600px; 
+	background #f0f0f0;
+#shikarniy
+	position relative; min-width 1280px; min-height 100%; clearfix();
+	.wrap
+		position relative; min-width 1260px; max-width 1920px; margin 0 auto; height 100%;
+	.main-page
+		padding 95px 30px 30px 293px;
+	.main-width
+		max-width 1100px; margin 0 auto;
+.hoverbg
+	.icon
+		position relative; 
+		.act
+			display none; position absolute; left 0; top 0;
+
+.text-pop
+	.ins
+		width 500px; 
+		p
+			margin-bottom 25px;
+			text-align center;
+	.close
+		text-align center;
+		a
+			padding 15px 45px;
+
+
+//	Левая колонка
+// ===============================================
+.sidebar
+	position absolute; left 0px; top 0px; 
+	background #272a33; 
+	width 263px; min-height 750px; height 100%; 
+	z-index 101; text-align center;
+	@media min-height
+		position fixed; left 0; top 0;
+	.logo
+		position fixed; left 0; top 0; width 263px; z-index 5; 
+		height 21px; padding 22px 0; background #272a33;
+		a
+			display inline-block; width 178px; height 16px; anim();
+			background url("../img/left/logo.png") no-repeat; anim-op();
+			&:hover
+				opacity 0.8; tdn();
+	//=====
+	.user
+		position relative; padding 93px 0 18px 0; background #1d2028; text-align center;
+		.pic
+			display inline-block; background #272a33; padding 7px; margin-bottom 7px; border-radius 50%; 
+			img
+				display block; 
+		.age
+			position absolute; right 30px; top 93px; height 17px; padding-left 23px; color #767886; font-size 12px;
+			&.man
+				background url("../img/left/i-man.png") no-repeat; 
+			&.woman
+				height 19px
+				padding-left 20px
+				background url("../img/left/i-woman.png") no-repeat; 
+		a.settings
+			position absolute; left 57px; top 93px;
+			.icon
+				display block; width 17px; height 19px; background url("../img/left/i-setting.png") no-repeat; anim();
+				&:hover
+					transform rotate(90deg); tdn();
+				.act
+					width 17px; height 19px; background url("../img/left/i-setting-a.png") no-repeat;
+					
+		.name
+			padding-bottom 20px; color #fff;  text-transform uppercase;
+		.contacts
+			display inline-block; color #989aa8; 
+			a
+				color #989aa8;
+				&:hover
+					color #3cb4c7; tdn();
+			div
+				 padding-left 27px; margin-bottom 8px; text-align left; 
+			.phone
+				background url("../img/left/i-phone-g.png") 2px center no-repeat;
+			.email
+				background url("../img/left/i-email-g.png") 0 center no-repeat; 
+			.site
+				background url("../img/left/i-site-g.png") 0 center no-repeat; 
+	//=====
+	.menu
+		background #272a33; text-align left; 
+		ul
+			lino();
+			li
+				anim-bgcolor();
+				a
+					display block; padding 19px 30px 19px 60px; color #989aa8; text-transform uppercase;
+				&:hover
+					background #22252d url("../img/left/menu-arrow.png") right center no-repeat; 
+					a
+						tdn();
+			li.home a
+				background url("../img/left/menu-home.png") 32px 19px no-repeat; 
+			li.career a
+				background url("../img/left/menu-career.png") 32px 19px no-repeat;
+			li.work a
+				background url("../img/left/menu-work.png") 32px 20px no-repeat;
+			li.educ a
+				background url("../img/left/menu-educ.png") 32px 19px no-repeat;
+			li.educ-ext a
+				background url("../img/left/menu-educ-ext.png") 32px 19px no-repeat;
+			li.active
+				background #1d2028 url("../img/left/menu-arrow.png") right center no-repeat; border-left 3px solid #3bb3c7;  
+				a
+					margin-left -3px;
+			li.vac a
+				background-position 32px center; 
+				
+	//=====
+	.logo-ibs
+		position absolute; left 100px; bottom 60px;
+		a
+			display block; width 49px; height 18px; background url("../img/main/logo-ibs.png") no-repeat; anim-op();
+			&:hover
+				tdn();
+				opacity 0.7;
+	//=====
+	.enter
+		position relative;
+		.login
+			padding 93px 30px 25px 30px;
+			text-align center;
+			background #1d2028;
+			.bname
+				color #fff; text-transform uppercase; semibold();
+				padding-bottom 20px;  
+			input
+				width 100%; full(); margin-bottom 15px; padding 10px 15px 10px 45px;
+				font-size 14px; color #fff; text-align left;
+				border none; border-radius 25px; 
+				&.login
+					background #272a33 url("../img/main/i-user.png") 20px center no-repeat;
+				&.pas
+					background #272a33 url("../img/main/i-key.png") 20px center no-repeat;
+				&:hover, &:focus
+					background-color #333743; 
+			.actions
+				text-align left;
+				clearfix(); 
+				a
+					float left; 
+					display block;
+					margin-top 7px;  
+					color #989aa8; font-size 12px;
+				input
+					float right; 
+					display inline-block; 
+					width auto; margin-left 15px; padding 5px 20px; margin 0;
+					font-size 14px; semibold();
+					background #35a3b5; border-radius 25px;
+					anim();
+					&:hover
+						background #3db4c7;
+		//=====
+		.reg
+			padding 25px 30px 0 30px;
+			text-align center;
+			a
+				display inline-block; 
+				width 100%; full(); margin-left 15px; padding 5px 20px; margin 0;
+				font-size 14px; semibold(); color #fff; tdn();
+				background #35a3b5; border-radius 25px;
+				anim();
+				&:hover
+					background #3db4c7; 
+
+
+//	Поиск, полоска
+// ===============================================
+.topper
+	position fixed; left 0; top 0; width 100%; min-width 650px; full(); height 65px; padding-left 263px; 
+	z-index 100;
+	background #3eb4c6; clearfix();
+	background linear-gradient(to bottom, #3cb4c7 0%,#39abbd 100%);
+	.main-width
+		max-width 1160px;
+	.search
+		overflow hidden; full(); padding-top 13px; padding-left 30px; padding-right 5%;
+		form
+			position relative; 
+			input.filed
+				width 100%; full(); padding 8px 20px; color #fff; 
+				background #35a3b5; border none; border-radius 50px; anim-long();
+				&:hover, &:focus
+					color #82868e; background #fff;
+			input.filed::-webkit-input-placeholder
+				color #fff; anim-long();
+			input.filed:hover::-webkit-input-placeholder
+				color #82868e;
+			input.filed:focus::-webkit-input-placeholder
+				color #82868e;
+			input.submit
+				position absolute; right 15px; top 10px; width 17px; height 18px; padding 0; 
+				background url("../img/main/i-search.png") no-repeat; border none; anim-long();
+			input.filed:hover + input.submit, input.filed:focus + input.submit
+				background url("../img/main/i-search-a.png") no-repeat;
+	.info
+		float right; width 200px;
+		a
+			anim();
+		a:hover
+			background #38a9bb; tdn();
+		.notafication
+			float right; full(); padding 0 0px 0 0; white-space nowrap; 
+			a
+				display block; padding 25px 25px 18px 25px; clearfix();
+				.icon
+					display block; float left; width 16px; height 18px; background url("../img/main/i-count.png") no-repeat; 
+				.count
+					display block; float left; margin -5px 0 0 5px; padding 5px 5px;
+					color #fff; font-size 12px; text-align center; 
+					background #3a98a7; border-radius 3px;
+			a:hover
+				.icon
+					animation notafication 0.7s;
+		.exit
+			float right; full(); padding 0px 0px 0 0;
+			a
+				display block; padding 25px 30px 18px 30px;
+				.icon
+					width 16px; height 18px; background url("../img/main/i-exit.png") no-repeat;
+	.menu-wrap
+		margin 0 auto
+		padding 5px 0
+		max-width 1160px
+		td
+			padding 0 30px
+
+
+//	Рейтинг
+// ===============================================
+.jq-rating
+	overflow hidden;
+	.jq-rating-group
+		cursor pointer;
+		.jq-rating-star
+			width 8px; height 8px; margin-right 13px; background #c8cbd0; border-radius 8px;
+	.jq-rating-group--hover
+		.jq-rating-star
+			width 8px; height 8px; margin-right 13px; background #3cb4c7; border-radius 8px;
+//=====
+.rating
+	ul
+		lino(); clearfix();
+		li
+			float left; width 8px; height 8px; margin-right 13px; background #c8cbd0; border-radius 8px;
+		li.full
+			color #000; background #3cb4c7;
+
+
+
+// ==========
+.specbox
+	position relative; padding 30px 55px 30px 50px; margin-bottom 15px;
+	color #fff; font-size 16px; line-height 24px;
+	background #3cb4c7; border-radius 3px; 
+	&:after
+		position absolute; right 30px; bottom 30px; width 11px; height 7px; content " ";
+		background url("../img/main/i-q-right.png") no-repeat;
+	&:before
+		position absolute; left 30px; top 30px; width 11px; height 7px; content " ";
+		background url("../img/main/i-q-left.png") no-repeat;
+
+
+// ==========
+.user-welcome
+	position relative; margin -30px -30px 30px -30px;	
+	.wrapper
+		position relative; height 100%; max-width 1100px; margin 0 auto; clearfix();
+	.inform
+		position relative; height 354px; color #fff; padding 0 30px; 
+		background url("../img/content/user-welcome.png") center center no-repeat; background-size cover;
+		&.bg-profile-2
+			background url("../img/content/user-welcome-2.jpg") center center no-repeat; background-size cover;
+		.city
+			position absolute; left 0; top 30px; padding-left 20px; 
+			background url("../img/main/i-location.png") 0 center no-repeat;
+		.educ
+			position absolute; left 0; top 30px;
+			.item
+				padding-left 20px; padding-bottom 15px;
+				background url("../img/main/i-educ-b.png") 0 2px no-repeat;
+		.menu
+			position absolute; right 0px; top 30px;
+			.icon
+				display block; width 17px; height 12px; background url("../img/main/i-menu-w.png") no-repeat;
+				.act
+					width 17px; height 12px; background url("../img/main/i-menu-a.png") no-repeat;
+		.phone
+			position absolute; left 0; bottom 30px; padding-left 20px; 
+			background url("../img/main/i-phone-b.png") 0 center no-repeat; 
+		.email
+			position absolute; right 0; bottom 30px; padding-left 20px; 
+			background url("../img/main/i-phone-b.png") 0 center no-repeat;
+			a
+				color #fff;
+				&:hover
+					color #3bb3c7; tdn();
+		.user
+			position absolute; left 50%; top 40px; width 500px; margin-left: -250px; text-align center;
+			.pic
+				position relative; display inline-block; padding-top 5px;
+				img
+					display inline-block; border 7px solid rgba(39,42,51, 0.2); border-radius 135px;
+			.write
+				position absolute; left -5px; top 0;
+				.icon
+					display block; width 25px; height 14px; background url("../img/main/i-msg-b.png") no-repeat;
+					.act
+						width 25px; height 14px; background url("../img/main/i-msg-b-a.png") no-repeat;
+			.favorite
+				position absolute; right -5px; top 0;
+				.icon
+					display block; width 18px; height 17px; background url("../img/main/i-star-b.png") no-repeat;
+					.act
+						width 18px; height 17px; background url("../img/main/i-star-b-a.png") no-repeat;
+			.name
+				padding 19px 0;
+				a
+					color #fff; text-transform uppercase; semibold();
+					&:hover
+						color #3bb3c7; tdn();
+			.give-job
+				a
+					display inline-block; color #fff; padding 5px 13px 5px 40px; white-space nowrap; anim();
+					background rgba(0,0,0,0.15) url("../img/main/i-work-b.png") 15px center no-repeat;
+					&:hover
+						color #3bb3c7; tdn();
+						background rgba(0,0,0,0.20) url("../img/main/i-work-b.png") 15px center no-repeat;
+			.site
+				a
+					display inline-block; color #fff; padding 5px 13px 5px 40px; white-space nowrap; anim();
+					background rgba(0,0,0,0.15) url("../img/main/i-site-b.png") 15px center no-repeat;
+					&:hover
+						color #3bb3c7; tdn();
+						background rgba(0,0,0,0.20) url("../img/main/i-site-b.png") 15px center no-repeat;				
+	//=====
+	.profile
+		padding 0 30px 4px 30px; background #fff url("../img/main/user-welcome-profile.png") 0 bottom repeat-x;   
+		.box
+			float left; width 33%; padding 20px 0 20px 30px; full(); line-height 20px;
+			border-right 1px solid #e5e5e5; 
+			&:first-child 
+				padding-left 0;
+			&:last-child 
+				border none;
+			.name
+				semibold();
+			.content				
+				span
+					color #a5a7ac;
+
+
+//	ГРАФИК
+// ===============================================
+.graphbox
+	position relative; margin-bottom 15px; overflow hidden;
+	background #fff; border-radius 5px; border 1px solid #e1e1e1; box-shadow: 0px 1px 1px 0.00px rgba(225, 225, 225, 0.75); 
+	.topbl
+		position relative; padding 40px 75px 30px 75px; clearfix();
+		background #fdfdfd; border-bottom 1px solid #e2e2e2; 
+		.slider-nav
+			position absolute; top 50px;
+			&.left
+				left 30px;
+				.icon
+					background url("../img/main/i-arrow-left.png") no-repeat;
+					.act
+						background url("../img/main/i-arrow-left-a.png") no-repeat;
+			&.right
+				right 30px;
+				.icon
+					background url("../img/main/i-arrow-right.png") no-repeat;
+					.act
+						background url("../img/main/i-arrow-right-a.png") no-repeat;
+			.icon
+				display block; width 11px; height 19px;
+				.act
+					width 11px; height 19px;	
+		.bg
+			position absolute; left 50%; bottom -22px; width 953px; height 22px; margin-left -476px; z-index 1;
+			background url("../img/main/graph-bg-top.png") no-repeat;
+		.target
+			float left; padding-left 40px; background url("../img/main/i-target.png") 0 center no-repeat;
+			.name
+				text-transform uppercase; semibold();
+		.profit
+			float right; text-align right;
+			.name
+				padding-bottom 5px; text-transform uppercase; semibold();
+			.desc
+				display inline-block; white-space nowrap; clearfix(); text-align right; 
+				.va
+					float left; padding-right 5px; padding-top 3px;
+				.sep
+					float left; width 3px; height 3px; margin 13px 0 0 10px; 
+					background #b0b3ba; border-radius 3px; 
+				.count
+					float left; margin-left 10px; padding 5px 8px; color #fff; font-size 12px;
+					background #b0b3ba; border-radius 3px;
+	//=====
+	.botbl
+		position relative; padding 40px 75px 40px 75px; clearfix();
+		background #fdfdfd; border-top 1px solid #e2e2e2; 
+		.bg
+			position absolute; left 50%; top -22px; width 953px; height 22px; margin-left -476px; z-index 1;
+			background url("../img/main/graph-bg-bot.png") no-repeat;
+		.target
+			float left; padding-left 40px; background url("../img/main/i-target.png") 0 center no-repeat;
+			.name
+				text-transform uppercase; semibold();
+		.profit
+			float right; text-align right;
+			.name
+				padding-bottom 5px; text-transform uppercase; semibold();
+			.desc
+				display inline-block; white-space nowrap; clearfix(); text-align right; 
+				.va
+					float left; padding-right 5px; padding-top 3px;
+				.sep
+					float left; width 3px; height 3px; margin 13px 0 0 10px; 
+					background #b0b3ba; border-radius 3px; 
+				.count
+					float left; margin-left 10px; padding 5px 8px; color #fff; font-size 12px;
+					background #b0b3ba; border-radius 3px;
+	//=====
+	.graph-content
+		position relative; height 945px; background url("../img/main/graph-bg-rep.png") center 77px;
+		.graph
+			position absolute; width 600px; left 50%; top -40px; margin-left -300px; z-index 5;
+			.remove
+				position absolute; left 220px; top -5px;
+				.icon
+					display block; width 26px; height 17px;
+					background url("../img/main/i-graph-remove.png") no-repeat; 
+					.act
+						width 26px; height 17px;
+						background url("../img/main/i-graph-remove-a.png") no-repeat; 
+			.add
+				position absolute; right 220px; top -5px;
+				.icon
+					display block; width 26px; height 17px;
+					background url("../img/main/i-graph-add.png") no-repeat; 
+					.act
+						width 26px; height 17px;
+						background url("../img/main/i-graph-add-a.png") no-repeat;
+			.graph-bg-full
+				display none;
+				z-index 12;
+				position fixed; top 0%; left 0; width 100%; height 100%; full(); overflow hidden;
+				background alpha(#f0f0f0, 60%); 
+			.graph-inside
+				position relative;
+				.element
+					width 20px; position absolute;
+					.prev
+						opacity .7;
+						&:hover
+							opacity 1; 
+					.hidden-box
+						z-index 22;
+						display none;
+						position absolute; left 0; margin-left -106px; bottom 100px; width 250px; full(); 
+						padding 20px; 
+						text-align center;
+						background #fff;
+						border: 1px solid #E2E2E2;
+						border-radius 4px;
+						box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+						&:after
+							content " "; 
+							position absolute; left 50%; bottom -50px; margin-left -14px; 
+							width 28px; height 37px;
+							background url("../img/main/i-map-cur.png") no-repeat; 
+					h3
+						color #7e8084; font-size 16px;
+						margin-bottom 10px;
+					p
+						margin-bottom 10px;
+						color #7e8084;
+					p.blue
+						margin-bottom 15px;
+						color #3bb3c7; font-weight 400; font-size 14px;
+				.element.active
+					.prev
+						position relative;
+						z-index 12;
+						opacity 1;		   
+				.element-1
+					left -1px; top 383px;
+					
+		.ways
+			position absolute; right 30px; top 400px; 
+			ul
+				display inline-block;
+				lino();
+				li
+					display block; padding 0 0 10px 0;
+					a
+						display block; padding 5px 10px; color #fff; border-radius 50% 50% 50% 50%; anim-op();
+						&:hover 
+							opacity 0.8; tdn();
+				li.pink a
+					background #a574c3; 
+				li.blue a
+					background #3cb4c7; 
+				li.blue-dark a
+					background #378ed0; 
+				li.green a
+					background #46dfab;
+				li.active
+					a
+						opacity 0.7;
+		.recomends
+			position absolute; left 30px; top 40px;
+		.terms
+			position absolute; right 30px; top 53px;
+			ul.switch
+				width 140px;
+				lino();
+				li
+					float left;
+					a
+						color #a5a8ac; text-transform uppercase; semibold(); tdn(); anim();
+				li.switch-con
+					margin 1px 6px 0 6px; anim-op();
+					.switch-line
+						position relative; width 34px; height 18px;
+						background #c8cbd0; border-radius 18px; cursor pointer;
+						anim();
+						.switch-dot
+							position absolute; left 2px; top 2px; width 14px; height 14px; border-radius 14px; 
+							background #ffffff; anim();
+				li.switch-con.right
+					.switch-dot
+						left 18px; anim();
+					.switch-line
+						background #3cb4c7; 
+				li.switch-con:hover
+					opacity 0.8;
+				li.active a
+					color #3cb4c7; cursor pointer;
+
+
+
+//	СЛАЙДЕР ОБРАЗОВАНИЯ / РАБОТЫ
+// ===============================================
+.works-time
+	position relative; overflow hidden; background #fff; border-radius 3px;
+	.hide-bg-r
+		position absolute; right -20px; top 0; width 127px; height 98%; z-index 10;
+		background url("../img/main/test-step-bg-hide-r.png") repeat-y; 
+	.hide-bg-l
+		position absolute; left -20px; top 0; width 127px; height 98%; z-index 10;
+		background url("../img/main/test-step-bg-hide-l.png") repeat-y; 
+	.slider-wrap
+		.owl-stage-outer
+			padding 0 20px 0 20px; full()
+		.item
+			float left; padding 0px 20px 30px 20px; full(); position relative;
+			.ins
+				padding-left 25px; margin-bottom 15px; border-left 2px solid #e1e1e1; 
+			.icon
+				position relative; display block; margin 0 0 15px 25px; width 35px; height 35px;
+				&.educ
+					background url("../img/main/i-circle-work.png") no-repeat;
+				&.work
+					background url("../img/main/i-circle-educ.png") no-repeat;
+				.bg
+					position absolute; left -25px; top 15px; width 17px; height 50px;
+					background url("../img/main/work-time-bg-s.png") no-repeat; 
+			.name
+				padding-bottom 5px; font-size 16px; bold(); text-transform uppercase;
+			.post
+				padding-bottom 10px; color #3bb3c7; font 14px;
+				&.cert
+					padding-left 30px; background url("../img/main/i-cert.png") 0 0px no-repeat;
+			.desc
+				min-height 40px; padding-bottom 15px;
+			.dates
+				position relative; clearfix(); padding-top 20px;
+				background url("../img/main/bg-blue.png") 0 top repeat-x; 
+				.date
+					position relative; padding 5px 10px; background #ededed; 
+					&:after
+						position absolute; width 0; height 0; top -7px; content " ";
+						border-style solid; border-width 7px 0 0 7px;
+						border-color transparent transparent transparent #d5d5d5;	
+					&.right
+						float right; border-radius 3px 0 3px 3px;
+						.date-icon
+							right -6px;	
+					&.right:after
+						right 0px;
+						border-width 0 0 7px 7px;
+						border-color transparent transparent #d5d5d5 transparent;	
+					&.left
+						float left; border-radius 0 3px 3px 3px;
+						.date-icon
+							left -6px;	
+					&.left:after
+						left 0px;	
+
+				.date-icon
+					position absolute; top -26px; width 14px; height 14px;
+					background url("../img/main/circle-white-blue.png") no-repeat;
+				.date-text
+					padding-top 0px; font-size 12px; white-space nowrap;
+					.year
+						display inline-block; font-size 14px; semibold();
+	.dots
+		text-align center; padding-bottom 30px;
+		ul
+			display inline-block;
+			lino();
+			li
+				display block; float left; padding 0 5px;
+				a
+					display block; float left; width 8px; height 8px; border-radius 8px;
+			li.pink a
+				background #a574c3; 
+			li.blue a
+				background #3cb4c7; 
+			li.blue-dark a
+				background #378ed0; 
+			li.green a
+				background #46dfab;
+			li.active
+				a
+					width 12px; height 12px; margin-top -3px;							
+
+
+.career-item-pop
+	.item
+		width 400px; padding 0px 20px 30px 20px; full(); position relative;
+		.insided 
+			padding-left 25px; margin-bottom 15px; border-left 2px solid #e1e1e1; 
+		.icon
+			position relative; display block; margin 0 0 15px 25px; width 35px; height 35px;
+			&.educ
+				background url("../img/main/i-circle-work.png") no-repeat;
+			&.work
+				background url("../img/main/i-circle-educ.png") no-repeat;
+			.bg
+				position absolute; left -25px; top 15px; width 17px; height 50px;
+				background url("../img/main/work-time-bg-s.png") no-repeat; 
+		.name
+			padding-bottom 5px; font-size 16px; bold(); text-transform uppercase;
+		.post
+			padding-bottom 10px; color #3bb3c7; font 14px;
+			&.cert
+				padding-left 30px; background url("../img/main/i-cert.png") 0 0px no-repeat;
+		.desc
+			min-height 40px; padding-bottom 15px;
+		.dates
+			position relative; clearfix(); padding-top 20px;
+			background url("../img/main/bg-blue.png") 0 top repeat-x; 
+			.date
+				position relative; padding 5px 10px; background #ededed; 
+				&:after
+					position absolute; width 0; height 0; top -7px; content " ";
+					border-style solid; border-width 7px 0 0 7px;
+					border-color transparent transparent transparent #d5d5d5;	
+				&.right
+					float right; border-radius 3px 0 3px 3px;
+					.date-icon
+						right -6px;	
+				&.right:after
+					right 0px;
+					border-width 0 0 7px 7px;
+					border-color transparent transparent #d5d5d5 transparent;	
+				&.left
+					float left; border-radius 0 3px 3px 3px;
+					.date-icon
+						left -6px;	
+				&.left:after
+					left 0px;	
+
+			.date-icon
+				position absolute; top -26px; width 14px; height 14px;
+				background url("../img/main/circle-white-blue.png") no-repeat;
+			.date-text
+				padding-top 0px; font-size 12px; white-space nowrap;
+				.year
+					display inline-block; font-size 14px; semibold();
+	.close
+		text-align center;
+		a.btn-blue
+			padding 15px 45px; 
+
+
+//	КОНТЕНТ БЛОКИ
+// ===============================================
+.wbox
+	position relative; 
+	padding 30px 30px 0px 30px; 
+	margin-bottom 30px;
+	background #fff; 
+	border-radius 5px; 
+	border 1px solid #e1e1e1; 
+	box-shadow: 0px 1px 1px 0.00px rgba(225, 225, 225, 0.75);
+.wbox-in-tab
+	margin-bottom 0
+	background none
+	border none
+	border-radius 0
+.wbox-name
+	border-bottom 1px solid #e1e1e1;
+	&.no-bd
+		border none;
+	h2
+		margin-bottom 25px;
+		span.count
+			margin-left 10px
+			padding 3px 5px
+			color #fff
+			font-size 12px
+			background #82868e
+			border-radius 3px
+.wbox-menu
+	position absolute; right 32px; top 32px;
+	&.save
+		display none;
+		a
+			display block; width 17px; height 17px;
+			background url("../img/main/i-save.png") no-repeat;
+			anim-op();
+			&:hover
+				opacity .7;
+	.icon
+		display block; width 17px; height 12px; background url("../img/main/i-menu.png") no-repeat;
+		.act
+			width 17px; height 12px; background url("../img/main/i-menu-a.png") no-repeat;
+	.icon.active
+		.act
+			display block;
+	.dropmenu
+		display none;
+		overflow hidden;
+		position absolute; right 0px; top 30px; z-index 12;
+		background #fff;
+		border 1px solid #E1E1E1;
+		box-shadow: 0px 0px 10px rgba(225, 225, 225, 0.75);
+		border-radius 5px;
+		&:after
+			position absolute; width 0; height 0; right 0; top -7px; content " ";
+			border-style solid;
+			border-width 0 7px 7px 7px;
+			border-color transparent transparent #3BB3C7 transparent;
+		ul
+			lino();
+		li 
+			display block;
+		a
+			display block; padding 10px 15px;
+			tdn(); font-weight 400; 
+			anim-all();
+			&:hover
+				color #fff;
+				background #63c3d2;
+.wbox-content
+	padding-top 15px;
+	position relative
+	&.no-top-pad
+		padding-top 0;
+	.item-edit
+		display none;
+		position relative;
+		padding-bottom 20px;
+		a.btn-blue
+			position relative
+			padding 10px 20px; font-size 14px;
+	.item-edit-sm
+		padding-bottom 10px
+		a.btn-blue
+			padding 10px 10px
+			font-size 12px
+.wbox-white
+	padding 30px 0 0 0; margin-bottom 30px;
+	background #fff; border-radius 0 0 5px 5px; border-top 0; border 1px solid #e1e1e1; 
+	box-shadow: 0px 1px 1px 0.00px rgba(225, 225, 225, 0.75);
+	&.bdr
+		border-radius 5px;
+.wbox-more
+	position relative; text-align center; margin-top -50px; padding-top 48px; padding-bottom 30px; clear both;
+	background url("../img/main/wbox-educ-bg-hide.png")  0 top repeat-x; border-radius 0 0 3px 3px;
+	&.marg
+		margin-top -80px;
+	&.margn-side
+		margin -80px -30px 0 -30px;
+	&.margin-bottom
+		margin-bottom -50px;
+	a
+		position relative; display inline-block; padding 10px 25px; color #a5a8ac; font-size 12px; text-transform uppercase; anim();
+		border 2px solid #c8cbd0; border-radius 3px; z-index 5;
+		&:hover
+			color #fff; tdn(); background #c8cbd0;  
+.wbox-list-all
+	position relative; margin-top 0px; padding 25px 0 25px 0; font-size 16px; semibold();
+	clearfix();
+	.right
+		float right;
+.wbox-table2
+	display table; width 100%;
+	.cell
+		width 50%; display table-cell;
+		&:last-child
+			padding-left 15px;
+		&:first-child
+			padding-right 15px;
+.wbox.grey
+	background #fdfdfd; 
+	.wbox-content
+		background #fff; margin 0 -30px; padding 0;
+//=====
+//=====
+.univ-items
+	overflow hidden;
+	background #fff; border-radius 0 0 4px 4px;
+	border 1px solid #e1e1e1; 
+	box-shadow: 0px 1px 1px 0.00px rgba(225, 225, 225, 0.75);
+	.item
+		padding 20px 30px; 
+		border-bottom 1px solid #e1e1e1;
+		h3
+			margin-bottom 5px;
+		p
+			margin-bottom 5px;
+		strong
+			semibold();
+	.item:nth-child(even)
+		background #f0f0f0;
+	.more
+		padding 20px 30px;
+		text-align center; 
+		a
+			position relative; display inline-block; padding 10px 25px; color #a5a8ac; font-size 12px; text-transform uppercase; anim();
+			border 2px solid #c8cbd0; border-radius 3px; z-index 5;
+			&:hover
+				color #fff; tdn(); background #c8cbd0;  
+//=====
+.wbox
+	//=====
+	.wbox-coming-targets
+		position relative; overflow hidden;
+		.ins
+			position relative; padding 40px 75px 30px 75px; clearfix();
+			background #fdfdfd; border-bottom 1px solid #e2e2e2; 
+			.slider-nav
+				position absolute; top 50px;
+				&.left
+					left 30px;
+					.icon
+						background url("../img/main/i-arrow-left.png") no-repeat;
+						.act
+							background url("../img/main/i-arrow-left-a.png") no-repeat;
+				&.right
+					right 30px;
+					.icon
+						background url("../img/main/i-arrow-right.png") no-repeat;
+						.act
+							background url("../img/main/i-arrow-right-a.png") no-repeat;
+				.icon
+					display block; width 11px; height 19px;
+					.act
+						width 11px; height 19px;
+						
+			.bg
+				position absolute; left 50%; bottom -22px; width 953px; height 22px; margin-left -476px; z-index 1;
+				background url("../img/main/graph-bg-top.png") no-repeat;
+			.info
+				float left;
+				.name
+					padding-bottom 5px; 
+					color #3bb1c5; font-size 16px; text-transform uppercase; semibold();
+			.profit
+				float right; text-align right;
+				.name
+					padding-bottom 5px; text-transform uppercase; semibold();
+				.desc
+					display inline-block; white-space nowrap; clearfix(); text-align right; 
+					.va
+						float left; padding-right 5px; padding-top 3px;
+					.sep
+						float left; width 3px; height 3px; margin 13px 0 0 10px; 
+						background #b0b3ba; border-radius 3px; 
+					.count
+						float left; margin-left 10px; padding 5px 8px; color #fff; font-size 12px;
+						background #b0b3ba; border-radius 3px;
+		.cup
+			position relative; z-index 5; width 120px; margin -40px auto 0 auto; 
+			.bdin
+				display table-cell;
+				width 120px; height 120px; text-align center; vertical-align middle;
+				background #fff; border 2px solid #41b6c8; border-radius 50% 50%; text-align center;
+				.prev					
+					display inline-block; width 55px; height 55px; vertical-align middle;
+					background #3cb4c7; border-radius 50%;
+					img
+						display inline-block; margin-top 15px;
+		.links
+			position relative; text-align center; margin -30px auto 0 auto; padding-bottom 30px; 
+			span.sep
+				display inline-block;
+			a
+				display inline-block; width 170px; padding 10px 0px; margin 0; full();
+				font-size 12px; color #fff; text-transform uppercase; semibold(); tdn(); text-align center; white-space nowrap;
+				background #3bb0c3; border-radius 4px;
+				anim();
+				&:hover
+					background #46b5c7;
+				&:first-child
+					margin-right 165px;
+	.wbox-comments
+		.write-box
+			padding-bottom 30px; 
+			a.write-link
+				display block; height 25px; padding 15px 15px; color #939598; font-size 16px; 
+				border 1px solid #e1e1e1; border-radius 3px; anim();
+				&:hover
+					color #3cb4c7; border-color #3cb4c7; tdn();
+			.inside
+				clearfix(); margin -57px -30px 0 -30px; padding 0 30px 35px 30px; 
+				background url("../img/main/comment-write-bg.png") 0 bottom repeat-x; 
+				textarea
+					width 100%; padding 15px 20px; height 150px; full();
+				.files
+					margin-top 15px; margin-bottom 15px; clearfix(); padding 10px; background #f0f0f0; border-radius 3px;
+					.item
+						float left; padding-right 10px;
+						img
+							display block; 
+					.add 
+						float left;
+						a
+							display block; width 50px; height 50px;
+							background url("../img/main/i-plus.png") center center no-repeat;
+							&:hover
+								tdn();
+								background url("../img/main/i-plus-a.png") center center no-repeat;
+				.rating
+					float left; clearfix();	padding-left 2px; padding-top 20px; padding-bottom 15px;
+					span
+						float left; margin-right 15px;
+				.send
+					float right;
+		.comments
+			.comment
+				padding-bottom 15px; clearfix();
+				&:last-child
+					.content
+						border none;
+				.comment
+					padding-bottom 0;
+					.content
+						border-bottom none;
+				a
+					color #7e8084;
+					&:hover
+						color #3cb4c7; tdn();
+				.pic
+					float left; width 65px;			
+				.content
+					overflow hidden; border-bottom 1px solid #e1e1e1; 
+					.name-date
+						padding-bottom 10px; clearfix();
+						.name
+							float left; semibold(); color #7e8084;									
+						.answer-person
+							float left; padding-left 30px; color #a9acb1;
+							background url("../img/main/i-answer-person.png") 10px 4px no-repeat; 
+							a
+								color #a9acb1;
+								&:hover
+									color #3cb4c7; tdn();
+						.sep
+							float left; padding 0 10px; color #a9acb1; 
+						.date
+							float left; color #a9acb1;
+					.rating
+						padding-left 2px; padding-bottom 15px;
+					.text 
+						padding-bottom 15px;
+						img
+							display block; width 100%; max-width 1000px; 
+						.userhl
+							color #3cb4c7; semibold(); 
+					.files
+						clearfix();
+						.file
+							float left; padding-right 30px;
+							&.doc
+								a
+									background url("../img/main/i-doc-word.png") 0 center no-repeat; 
+							a
+								display block; padding 4px 0 4px 30px; color #3269ad;
+								&:hover
+									color #3cb4c7;
+					.actions
+						float right; padding-bottom 15px; clearfix();
+						a
+							display block; float left; margin-left 35px; color #a0a3a9;
+							&:hover
+								color #3cb4c7;							
+						a.answer
+							.icon
+								float left; display block; margin-top 2px; margin-right 5px; width 15px; height 15px;
+								background url("../img/main/i-answer.png") no-repeat; 
+								.act
+									float left; width 15px; height 15px;
+									background url("../img/main/i-answer-a.png") no-repeat;
+						a.like
+							.icon
+								float left; display block; margin-top 2px; margin-right 5px; width 17px; height 15px; 
+								background url("../img/main/i-like.png") no-repeat; 
+								.act
+									float left; width 17px; height 15px;
+									background url("../img/main/i-like-a.png") no-repeat;
+		.comments-show-more
+			position relative; text-align center; padding-bottom 30px; clear both;
+			a
+				position relative; display inline-block; padding 10px 25px; color #a5a8ac; font-size 12px; text-transform uppercase; anim();
+				border 2px solid #c8cbd0; border-radius 3px; z-index 5;
+				&:hover
+					color #fff; tdn(); background #c8cbd0;  
+	//=====
+	.wbox-educ
+		position relative; clearfix(); overflow hidden;
+		.box
+			float left; width 50%; padding 10px 0 10px 115px; full(); 
+			.item
+				position relative; padding-left 25px; padding-bottom 53px; border-left 2px solid #c8cbd0;
+				&:after
+					position absolute; left -6.5px; top 6px; width 12px; height 12px; content " ";
+					background url("../img/main/wbox-educ.jpg") no-repeat; 
+				&:last-child
+					padding-bottom 10px;
+				&:first-child:after
+					top 0; padding-top 4px; background #fff url("../img/main/wbox-educ.jpg") 0 bottom no-repeat; 
+				.name
+					padding-bottom 5px; font-size 16px; bold(); text-transform uppercase;
+				.post
+					padding-bottom 10px; color #3bb3c7; font 14px;
+					&.cert
+						padding-left 30px; background url("../img/main/i-cert.png") 0 0px no-repeat;
+				.date
+					position absolute; left -117px; top 11px; padding 5px 10px;  
+					background #ededed; border-radius 3px 0 3px 3px;
+					&:after
+						position absolute; width 0; height 0; right -7px; top 0; content " ";
+						border-style solid;
+						border-width 7px 7px 0 0;
+						border-color #d5d5d5 transparent transparent transparent;
+	//=====
+	.wbox-educ-recommend
+		.ratings
+			margin-left 30px; padding 15px 0;
+			text-align center;
+			a
+				display inline-block; margin 0 25px;
+				tdn(); color #7e8084; 
+				&:hover
+					color #3cb4c7; 
+				.name
+					display inline-block;
+				.icon
+					display inline-block; margin-bottom -5px; width 17px; height 19px; background url("../img/main/i-chart.png") no-repeat; anim();
+					.act
+						display inline-block; width 17px; height 19px; background url("../img/main/i-chart-a.png") no-repeat;
+					&:after
+						content " "; background url("../img/main/i-chart-a.png") no-repeat;
+		.table-wrap
+			overflow hidden; margin 0 -30px;
+			table
+				width 100%;
+				td
+					padding 25px 30px;
+					vertical-align middle;
+					border-bottom 1px solid #e1e1e1;
+				td.companytd
+					text-align center;
+					width 35%;
+					semibold(); 
+				td.timetd
+					text-align center;
+				td.pricetd
+					text-align right;
+				thead
+					td
+						semibold();
+						vertical-align bottom;
+				tbody
+					tr:nth-child(odd)
+						background #f0f0f0;
+					tr:last-child td
+						border-bottom none;
+			h3
+				margin-bottom 10px;
+			a
+				semibold(); text-transform uppercase;
+			span.price
+				display inline-block; padding 5px 10px; white-space nowrap;
+				color #fff;
+				background #3cb4c7; border-radius 3px;
+			a.open-atlas-circle
+				display inline-block; width 28px; height 28px; margin 0 0 -8px 20px;
+				background url("../img/main/i-circle-color.png") no-repeat;
+				anim();
+				&:hover
+					transform rotate(180deg);  
+	//=====
+	.wbox-educ-cuurent
+		padding-top 15px;
+		padding-bottom 25px;
+		.item
+			display table; width 100%; vertical-align top; 
+			.info
+				display table-cell;
+				padding-right 30px; vertical-align top; 
+				h3
+					margin-bottom 5px; font-size 16px; semibold();
+				p
+					margin-bottom 5px; line-height 25px;
+				.blue
+					color #3cb4c7; semibold(); 
+			.univ
+				width 50%;
+				display table-cell;
+				text-align right;
+				.text
+					display table-cell; width 100%; padding-right 15px; vertical-align middle; 
+					p
+						margin 5px 0;
+						a
+							font-size 16px; text-transform uppercase;
+					strong
+						semibold();
+				.prev
+					display table-cell; vertical-align middle;
+					img
+						display inline-block; border 2px solid #e8e8e8; border-radius 50%; 
+	//=====
+	.wbox-educ-need
+		position relative;
+		clearfix();
+		.filter
+			margin 0 -30px;
+			padding-top 5px;
+			padding-bottom 15px;
+			.filter-table
+				display table;
+				width 100%;
+			.cell
+				display table-cell;
+				width 33%;
+				padding 0 30px; full();
+		//=====
+		.table-wrap
+			overflow hidden; margin 0 -30px;
+			table
+				width 100%;
+				td
+					padding 25px 20px;
+					border-bottom 1px solid #e1e1e1;
+				td:first-child
+					padding-left 30px;
+				td:last-child
+					padding-right 30px; text-align right;
+				thead
+					td
+						semibold();
+					td.name
+						vertical-align middle;
+					td.date
+						background url("../img/main/i-calendar.png") right center no-repeat; 
+				tbody
+					tr:nth-child(odd)
+						background #f0f0f0;
+					tr:last-child td
+						border-bottom none;
+			h3
+				margin-bottom 15px;
+			a
+				semibold();
+			p
+				margin-bottom 10px;
+			.post
+				vertical-align middle; text-align center;
+			.date
+				vertical-align middle; text-align center;
+			.programms
+				vertical-align middle; text-align center;
+	//=====
+	.wbox-educ-ext
+		position relative;
+		clearfix();
+		.filter
+			margin 0 -30px;
+			padding-top 5px;
+			padding-bottom 25px;
+			border-bottom 1px solid #e1e1e1;
+			.filter-table
+				display table;
+				width 100%;
+			.cell
+				display table-cell;
+				width 33%;
+				padding 0 30px; full();
+		//=====
+		.box		
+			.name
+				display table-cell; width 50%; vertical-align top; 
+			.students
+				display table-cell; width 35%; vertical-align middle; 
+			.date
+				display table-cell; width 15%;
+				text-align right; vertical-align middle; 
+			//=====
+			.item
+				margin 0 -30px; padding 25px 30px; 
+				border-bottom 1px solid #e1e1e1;
+				clearfix(); 
+				&.item.hide
+					display none;
+				.ins
+					display table; width 100%;
+				.name
+					h3 
+						margin-bottom 15px;
+					a
+						semibold(); 
+					p
+						margin-bottom 10px;
+					strong
+						semibold();
+					span
+						display inline-block; margin-top 15px; padding 5px 10px;
+						color #fff;
+						background #3cb4c7; border-radius 3px;
+				.students
+					p
+						margin-bottom 10px;
+			.item:nth-child(odd)
+				background #f0f0f0;
+			.item:first-child
+				border-top 1px solid #e1e1e1;
+			.item:last-child
+				border-bottom none;
+			//=====
+			&.box-head
+				display table; width 100%;
+				padding-top 25px;
+				padding-bottom 15px;
+				semibold();
+				.name
+					vertical-align bottom;
+				.students
+					vertical-align bottom; padding-top 0;
+	//=====
+	.wbox-competence
+		position relative; clearfix(); overflow hidden;
+		.box
+			float left; width 50%; padding 10px 5px 10px 0; full(); 
+			&:last-child
+				padding-right 0; padding-left 5px;
+			.box-name
+				padding-bottom 20px; color #3cb4c7; semibold();
+			.item
+				padding 15px 15px; min-height 35px; margin-bottom 7px; line-height 18px; background #f0f0f0; border-radius 3px; 
+		.wbox-more
+			margin-top -80px;
+	//=====
+	.wbox-infomore
+		padding-top 10px; padding-bottom 25px; clearfix(); margin 0 -25px;
+		.item
+			float left; width 50%; full(); padding 0 25px;
+			.pic
+				float left; padding-top 5px; padding-right 15px;
+			.content
+				padding-top 7px; overflow hidden; 
+				.name
+					color #3cb4c7; semibold();
+	//=====
+	.wbox-license
+		padding-top 10px; padding-bottom 25px; clearfix(); margin 0 -25px;
+		.item
+			float left; width 33%; full(); padding 0 25px;
+			.pic
+				float left; padding-top 5px; padding-right 15px;
+				a
+					anim-op();
+				a:hover
+					opacity 0.7; tdn();
+			.content
+				overflow hidden; 
+				.name
+					padding-top 3px;
+					semibold();
+	//=====
+	.wbox-profile
+		padding-bottom 15px;
+		clearfix();
+		.box
+			float left; width 33%; padding 10px 0 10px 30px; full();  line-height 17px;
+			border-right 1px solid #e5e5e5; 
+			&:first-child 
+				padding-left 0;
+			&:last-child 
+				border none;
+			.name
+				semibold();
+			.content				
+				span
+					color #a5a7ac;
+	//=====
+	.wbox-programms
+		position relative;
+		clearfix();
+		.filter
+			margin 0 -30px;
+			padding-top 5px;
+			padding-bottom 24px;
+			border-bottom 1px solid #e1e1e1;
+			.filter-table
+				display table;
+				width 100%;
+			.cell
+				display table-cell;
+				width 33%;
+				padding 0 30px; full();
+		.box
+			overflow hidden;
+			.item
+				margin 0 -30px; padding 20px 30px; 
+				border-bottom 1px solid #e1e1e1;
+				clearfix(); 
+				.left
+					float left; width 60%;
+				.right
+					float right; width 30%; padding-top 25px;
+					text-align right; 
+				strong
+					semibold();
+				.name
+					text-transform uppercase; semibold();
+					padding-bottom 15px;
+				.content
+					p
+						margin-bottom 5px;	
+				.price
+					padding-bottom 10px; 
+					span
+						display inline-block; margin-left 5px; padding 5px 10px;
+						color #fff;
+						background #3cb4c7; border-radius 3px;
+			.item:last-child
+				border-bottom none;	
+	//=====
+	.wbox-text-map
+		width 100%; padding-top 15px; padding-bottom 25px;
+		.text
+			display table-cell; width 100%; vertical-align top;
+			h3
+				margin-bottom 10px;
+			p
+				margin-bottom 10px;
+			strong
+				semibold();
+		.map
+			display table-cell; width 400px; padding-left 70px; 
+			text-align right; vertical-align top;		 
+	//=====
+	.wbox-qualification
+		padding-top 10px; padding-bottom 5px; clearfix(); margin 0 -25px;
+		.row
+			clearfix();
+			padding-bottom 20px; 
+		.item
+			float left; width 20%; full(); padding 0 25px;
+			.pic
+				float left; padding-top 5px; padding-right 15px;
+			.content
+				overflow hidden; 
+				.name
+					color #3cb4c7; semibold();
+		.show-more-qualification
+			background none;
+			margin-top -80px;
+	//=====
+	.wbox-work-cuurent
+		padding-top 15px;
+		padding-bottom 25px;
+		clearfix(); 
+		.item
+			float left; width 50%; full();
+			&:first-child
+				padding-right 30px;
+			&:last-child
+				padding-left 30px;
+			.table
+				display table; width 100%;
+			.info
+				display table-cell; padding-right 30px; vertical-align top;
+				h3
+					display table-cell; height 60px; vertical-align middle;
+				p
+					margin-bottom 0px; line-height 25px;
+				a
+					semibold();
+				strong
+					semibold();
+			.prev
+				display table-cell; vertical-align middle;
+			.money
+				padding-top 20px;
+				text-align right;
+				span
+					display inline-block; margin-left 5px; padding 5px 10px;
+					color #fff;
+					background #3cb4c7; border-radius 3px;
+	//=====
+	.wbox-work-cuurent2
+		padding-top 15px;
+		padding-bottom 25px;
+		.item
+			display table; width 100%; vertical-align top; 
+			.info
+				display table-cell;
+				width 70%; padding-right 30px; vertical-align top; 
+				h3
+					margin-bottom 15px; font-size 16px; semibold();
+				p
+					margin-bottom 0px; line-height 25px;
+				.price
+					display inline-block; padding 5px 10px;
+					color #fff;
+					background #3cb4c7; border-radius 3px;
+			.univ
+				width 30%;
+				display table-cell;
+				text-align right;
+				.text
+					display table-cell; width 100%; padding-right 15px; vertical-align middle; 
+					p
+						margin 5px 0;
+						semibold();
+						a
+							font-size 16px; text-transform uppercase;
+				.prev
+					display table-cell; vertical-align middle;
+					img
+						display inline-block; border 2px solid #e8e8e8; border-radius 50%; 
+	//=====
+	.wbox-workers-need
+		position relative;
+		clearfix();
+		.filter
+			margin 0 -30px;
+			padding-top 5px;
+			padding-bottom 15px;
+			.filter-table
+				display table;
+				width 100%;
+			.cell
+				display table-cell;
+				width 33%;
+				padding 0 30px; full();
+		//=====
+		.table-wrap
+			overflow hidden; margin 0 -30px;
+			table
+				width 100%;
+				td
+					padding 25px 20px;
+					vertical-align middle;
+					border-bottom 1px solid #e1e1e1;
+				td.answers
+					text-align right;
+				td:first-child
+					padding-left 30px;
+				td:last-child
+					padding-right 30px; text-align right;
+				thead
+					td
+						semibold();
+					td.name
+						vertical-align middle;
+				tbody
+					tr:nth-child(odd)
+						background #f0f0f0;
+					tr:last-child td
+						border-bottom none;
+			a.sort
+				display inline-block; width 6px; height 6px; margin-bottom 5px;
+				background url("../img/main/arrow-bf-bot.png") no-repeat; 
+			h3
+				margin-bottom 15px;
+			a
+				semibold();
+			p
+				margin-bottom 10px;
+			span.price
+				display inline-block; padding 5px 10px;
+				color #fff;
+				background #3cb4c7; border-radius 3px;
+			a.open-atlas-circle
+				display inline-block; margin 0 0 -6px 15px; width 28px; height 28px;
+				background url("../img/main/i-circle-color.png") no-repeat;
+				anim();
+				&:hover
+					transform rotate(180deg);  
+	//=====
+	.wbox-welcome
+		width 100%; padding-bottom 25px;
+		clearfix() 
+		.text
+			float left
+			padding-right 520px
+			width 100%
+			full() 
+			margin-right -450px
+			vertical-align middle;
+			h3
+				margin-bottom 10px;
+			p
+				margin-bottom 10px;
+			p.prof
+				font-size 16px; semibold(); text-transform uppercase;
+				span
+					color #3cb4c7; 
+		.prev
+			position relative
+			margin-right 65px
+			float right
+			full()  
+			text-align center; vertical-align top;
+			width 335px
+			img
+				display block; 
+				padding-bottom 10px;
+			.mac
+				z-index 9
+				position absolute 
+				left -55px 
+				top 30px
+				width 446px
+				height 257px
+				background url("../img/main/mac.png") 0 0 no-repeat
+			.slide
+				p.top
+					height 25px
+				p.pic
+					text-align center
+					img
+						display inline-block
+			.slider-nav
+				position absolute; top 45%;
+				z-index 10
+				&.left
+					left -50px;
+					.icon
+						background url("../img/main/i-arrow-left.png") no-repeat;
+						.act
+							background url("../img/main/i-arrow-left-a.png") no-repeat;
+				&.right
+					right -50px;
+					.icon
+						background url("../img/main/i-arrow-right.png") no-repeat;
+						.act
+							background url("../img/main/i-arrow-right-a.png") no-repeat;
+			.icon
+				display block; width 11px; height 19px;
+				.act
+					width 11px; height 19px;	
+//=====
+.wbox-white
+	.wbox-run-test
+		padding 0 30px 30px 30px;
+		.name-test
+			float left; padding-top 10px;
+		.time
+			float right; padding 10px 10px 10px 40px; color #fff;
+			background #3cb4c7 url("../img/main/i-time.png") 10px center no-repeat; border-radius 3px;
+			&.end
+				background #df4a4e url("../img/main/i-time.png") 10px center no-repeat;
+		.steps
+			position relative; clear both; padding-top 15px; padding-bottom 50px; overflow hidden;
+			.hide-bg-r
+				position absolute; right 0; top 0; width 127px; height 70px; z-index 10;
+				background url("../img/main/test-step-bg-hide-r.png") repeat-y; 
+			.hide-bg-l
+				position absolute; left 0; top 0; width 127px; height 70px; z-index 10;
+				background url("../img/main/test-step-bg-hide-l.png") repeat-y; 
+			ul
+				lino(); clearfix(); margin 0 0px; width 100%; full(); display table;
+				li
+					position relative; display table-cell; color #000; text-align center;
+					background url("../img/main/bg-grey.png") 0 center repeat-x;
+					.count
+						position relative; z-index 5; display inline-block; width 45px; padding 7px 0;
+						color #7e8084; font-size 12px; text-align center; vertical-align middle;
+						background url("../img/main/test-step-bg-num.png") center 0 no-repeat; 
+					&.active
+						background url("../img/main/test-step-bg-line.png") center center no-repeat; 
+						.ins
+							position relative; width 45px; margin 0 auto; 
+						.count
+							width 45px; height 21px; padding 12px 0; color #fff; font-size 16px;
+							background url("../img/main/test-step-bg-num-a.png") center 0 no-repeat;
+						.bg
+							position absolute; z-index 1; left -125px; top 22px; width 300px; height 2px; 
+							background url("../img/main/test-step-bg-line.png") center center no-repeat; 
+			ul.pos-3
+				padding-left 27.5%;
+				li:first-child
+					background url("../img/main/bg-grey.png") 45px center no-repeat;
+			ul.end
+				padding-right 46%;
+				li.active:last-child .bg
+						left -125px; width 250px; background url("../img/main/test-step-bg-line-end.png") 0 center no-repeat; 
+		.desc
+			padding 0 5% 50px 5%; font-size 16px; line-height 25px; text-align center;
+		.quest
+			padding-left 10%; width 70%; padding-bottom 55px;
+			.item
+				a
+					display table; width 100%; color #7e8084; vertical-align middle;
+					.sep
+						display table-cell; width 16px; height 16px;
+						background #dfe0e2; vertical-align middle; text-align center;
+						.circle
+							display inline-block; width 10px; height 10px; background #fff; border-radius 16px;
+					.name
+						display table-cell; padding 10px 20px; overflow hidden; line-height 22px; vertical-align middle;
+				a:hover
+					color #3cb4c7; tdn();
+					.circle
+						background #3cb0c2; 
+			.item:first-child .sep
+					border-radius 16px 16px 0 0;
+			.item:last-child .sep
+					border-radius 0 0 16px 16px;
+			.item.active
+				a
+					color #3cb4c7; 
+				.sep .circle
+					width 16px; height 16px; background #3cb0c2; 
+		.actions
+			clearfix(); text-align center;
+			a
+				margin 0 5px;
+		.results
+			.name
+				text-align center;
+			.text
+				padding-bottom 30px; line-height 22px;
+			.box
+				.line
+					padding-bottom 30px; clearfix();
+					.left
+						float left; width 33%; padding-right 50px; full();
+					.graph
+						position relative; float left; width 33%; padding-top 5px;
+						.ins
+							background #dfe0e2; border-radius 16px; clearfix();
+							.graph-left
+								float left; width 50%;
+								.active
+									float right; padding-left 10px; border-radius 16px 0  0 16px;
+							.graph-right
+								float left; width 50%; margin-left 50%;
+								.active
+									float left; padding-right 10px; border-radius 0 16px 16px 0; text-align right;
+							.active
+								full(); padding 2px 0; color #fff; font-size 12px; background #3cb4c7;
+							.graph-sep
+								position absolute; left 50%; top -3px; margin-left -1px; width 2px; height 37px; 
+								background url("../img/main/result-sep.png") no-repeat; 
+					.right
+						float left; width 33%; padding-left 50px; full(); text-align right;
+	//=====
+	.wbox-select-test
+		position relative; overflow hidden;
+		.line
+			padding 25px 0 10px 0;
+			clearfix();
+			.num
+				float left; width 5%; full(); padding 0 15px 0 30px; text-align center;
+			.name
+				float left; width 50%; full(); padding 0 15px;
+			.rating
+				float left; width 15%; full(); padding 5px 15px 0 15px;
+			.start
+				float left; width 30%; min-width 250px; full(); padding 0 30px 0 15px; margin-top -15px;
+				.btn-blue
+					width 100%; full(); font-size 14px; padding 15px 20px;
+		.line:nth-child(even)
+			background #f0f0f0; border-top 1px solid #e1e1e1; border-bottom 1px solid #e1e1e1; 
+		.line.top
+			padding 0 0 10px 0; semibold();
+			.rating
+				padding-top 0; 
+//=====
+.tbox 
+	position relative; margin-bottom 15px;
+	.tbox-name
+		padding-bottom 15px;
+		h2
+			margin-bottom 0;
+.tbox-more
+	position relative; text-align center; padding-top 20px; padding-bottom 30px; clear both;
+	a
+		display inline-block; padding 10px 25px; color #a5a8ac; font-size 12px; text-transform uppercase; anim();
+		border 2px solid #c8cbd0; border-radius 3px;
+		&:hover
+			color #fff; tdn(); background #c8cbd0;
+//=====
+.tbox 
+	.tbox-educ-recommend
+		.item
+			clearfix();
+			margin-bottom 15px;
+			background #fff; border-radius 5px; border 1px solid #e1e1e1; 
+			box-shadow: 0px 1px 1px 0.00px rgba(225, 225, 225, 0.75);
+		td
+			padding 25px 40px; vertical-align middle;
+		td.logo
+			text-align center; width 15%; 
+			border-right 1px solid #e1e1e1; 
+		td.date
+			text-align right;
+			border-right 1px solid #e1e1e1; 
+		td.name
+			width 40%;
+		td.price
+			width 20%;
+			text-align center;
+			span
+				display inline-block; margin-left 5px; padding 5px 10px;
+				color #fff; font-size 17px;
+				background #3cb4c7; border-radius 3px;
+		h3
+			margin-bottom 10px;
+		p
+			margin-bottom 10px;
+		a, strong
+			semibold();
+
+
+//	ТАБЫ
+// ===============================================
+.wbox-tabs
+	position relative; margin -35px 0px 0 0;
+	ul.tabs-nav
+		lino(); clearfix();
+		border 1px solid #e1e1e1; border-bottom 0; background #fff; 
+		li
+			float left; width 50%; text-align center;
+			a
+				display block; padding 20px 0; text-transform uppercase; semibold(); 
+				color #a5a8ac; border-bottom none;
+				&:hover
+					tdn(); border-bottom: 2px solid alpha(#3cb4c7, 20%);
+		li:first-child
+			a
+				border-right 1px solid #e1e1e1;
+		li.active
+			a
+				color #3cb4c7; border-bottom: 2px solid #3cb4c7; cursor default;
+	.empty-tab
+		padding 0 30px 30px 30px; font-size 18px; text-align center; text-transform uppercase; semibold();
+	h3
+		font-size 14px; text-transform uppercase;
+	.title-blue
+		text-align center;
+		h3 
+			color #3cb4c7;
+
+
+
+//	ГОРИЗОНТ ПЛАНИРОВАНИЯ
+// ===============================================
+.select-horizon
+	padding 30px; background #3f4761; text-align center; border-radius 0 0 3px 3px; border-top none;
+	.name
+		padding-bottom 80px;
+		h3
+			margin-bottom 0; color #fff;
+	.content
+		padding-bottom 20px;
+		table
+			width 100%;
+			td
+				width 1%; text-align center; vertical-align middle;
+			td.active
+				.point
+					width 24px; height 24px; border-radius 24px; margin-top -7px;
+					&:after
+						position absolute; width 0; height 0; left 4px; bottom -18px; content " ";
+						border-style solid; border-width 0 7px 7px 7px;
+						border-color transparent transparent #2d3448 transparent;
+					&:hover
+						.time
+							left 10px; top -50px;
+				.time
+					display block;
+			td:first-child
+				.ins
+					border 2px solid #6f7588; border-right 0; border-radius 10px 0 0 10px; 
+			td:last-child
+				.ins
+					border 2px solid #6f7588; border-left 0; border-radius 0 10px 10px 0; 
+		.ins
+			position relative; height 12px; border-top 2px solid #6f7588; border-bottom 2px solid #6f7588;
+		.point
+			position relative; width 6px; height 6px; margin 0 auto; margin-top 3px;
+			background #3cb4c7; border-radius 6px;
+			&:hover
+				.time
+					display block; top -60px; left 1px;
+			a
+				display block; width 100%; height 100%;
+		.time
+			display none; position absolute; left 10px; top -50px; padding 5px 10px; color #fff;
+			white-space nowrap; background #3cb4c7; border-radius 3px 3px 3px 0; 
+			&:after
+				position absolute; width 0; height 0; left 0px; bottom -7px; content " ";
+				border-style solid; border-width 7px 7px 0 0;
+				border-color #2f8e9d transparent transparent transparent;
+	.desc
+		margin 0 -30px -30px -30px; padding 30px; color #fff; background #373f57; border-radius 0 0 3px 3px; 
+
+
+
+//	АТЛАС ПРОФЕССИЙ
+// ===============================================
+.atlas-box
+	.atlas-search
+		position relative; padding-bottom 30px; clearfix();
+		.search
+			float left; position relative; width 50%; padding 0 45px 0 0; full();
+			.ins
+				position relative;
+			input.filed
+				width 100%; padding 16px 15px; full();
+				margin-bottom 0;
+				&:focus				
+					box-shadow 0px 0px 5px 0px #b1e1e9;
+				&:focus + input.submit
+					background url("../img/main/i-search-b.png") center center no-repeat; 	
+				&:hover + input.submit
+					background url("../img/main/i-search-b.png") center center no-repeat; 					
+			input.submit
+				position absolute; right 0; top 0; width 50px; height 100%;
+				background url("../img/main/i-search-g.png") center center no-repeat;
+				border none; 
+
+		.link 
+			position absolute; left 50%; top 0px; margin-left -25px; full(); text-align center;
+		.cats
+			float right; width 50%; padding 0 0 0 45px; full();
+//=====
+.atlas-circle
+	display none; z-index 6;
+	position fixed; top 0%; left 0; width 100%; height 100%; full(); overflow hidden;
+	background rgba(39, 42, 51, 0.85); 
+	.ins
+		position relative; height 100%; padding-left 260px; padding-top 60px; full();
+		.ins2
+			position relative; height 100%;
+			z-index 5000;
+		.ins-content
+			position absolute; left 0; top 50%; margin-left 50%; width 800px; transform translate(-50%,-50%);
+			background #fff; border-radius 10px;
+			overflow hidden;
+			padding 50px;
+			.close
+				position absolute; right 30px; top 30px;
+				a
+					display block; width 12px; height 12px;
+					anim();
+					background url("../img/main/i-close.png") no-repeat;
+					opacity 0.7;
+					&:hover
+						transform rotate(180deg); opacity 1; tdn();
+			.circle
+				float left; 
+				img
+					display block; 
+			.content
+				padding-top 30px; padding-left 60px; overflow hidden; text-align center; 
+				.content-name
+					padding-bottom 30px; med();
+					font-size 16px; color #5ecef4; text-transform uppercase;
+				.text
+					line-height 22px;
+				.selected
+					padding-top 60px;
+					h3 
+						margin-bottom 20px; font-size 16px; text-transform uppercase;
+					.item
+						display inline-block; clearfix(); padding 5px 10px; color #fff; background #5ecef4; border-radius 3px;
+						.name
+							float left; 						
+						.del
+							float right; padding 7px 0 0 10px;
+							a
+								display block; width 12px; height 12px; background url("../img/main/i-delete.png") no-repeat; 
+								color #000;
+								anim();
+			.apply
+				clear both; padding-top 50px; text-align center;
+				a
+					padding 10px 40px;
+
+
+
+// ==========
+.career-targets
+	padding 0 30px 0px 30px;
+	.name
+		text-align center;
+	.line
+		position relative; padding-bottom 30px;
+		.line-name
+			padding-left 15px; padding-bottom 10px; font-size 16px;
+		.inform
+			position absolute; left -300px; width 280px; padding 15px; full(); z-index 110; color #fff; line-height 22px;
+			background rgba(130,134,143,0.8); border-radius 3px 3px 0 3px; 
+			&:after
+				position absolute; width 0; height 0; right -7px; bottom 0px; content " ";
+				border-style solid; border-width 7px 0 0 7px;
+				border-color transparent transparent transparent #696c73;
+			&.inform-1
+				top -110px;
+			&.inform-2
+				top -14px; border-radius 3px;
+				&:after
+					bottom 49%;
+					border-width: 4px 0 4px 8px;
+			&.inform-3
+				top 30px; border-radius 3px 0 3px 3px;
+				&:after
+					top 0; 
+					border-width 0 0 7px 7px;
+	.box
+		display table-cell;
+		&:first-child
+			padding-right 60px;
+		.check
+			padding-top 5px;
+	.select-wrap
+		ul.option-list
+			position relative; left 0; top 0;
+
+
+
+// ==========
+.profession-box
+	margin-top -31px; padding 0 30px 0 30px;
+	&.nopd
+		margin-top 0px; padding 0;
+		.intro
+			margin-top -15px;
+	.intro
+		margin 0 -30px; padding 30px; color #fff; font-size 16px; text-align center;
+		background #3f4761;
+		.name 
+			padding-bottom 20px;
+		.rating
+			display inline-block;
+			ul
+				float left; margin-top 10px;
+			.counts
+				float left; padding 5px 5px; font-size 12px; color #fff; 
+				background #3cb4c7; border-radius 3px;
+	.content 
+		padding-top 10px;
+		h3 
+			font-size 14px;
+		.line
+			padding 20px 0; line-height 22px;
+		.line:nth-child(even)
+			margin 0 -30px; padding 20px 30px; background #f0f0f0; border-top 1px solid #e1e1e1; border-bottom 1px solid #e1e1e1;
+		.simular
+			margin 0 -30px;
+			table  
+				tr.top
+					td
+						med(); border none; padding-top 0;
+				td
+					padding 20px 30px; vertical-align middle; border-top 1px solid #e1e1e1;
+				tr:last-child td
+					padding-bottom 0;
+				td.pic img
+					display block;
+				td.rating
+					width 110px;
+
+
+
+// ==========
+.profession-recom
+	border-radius 3px 3px 0 0;
+	.simular
+		&.mrg
+			margin 0 -30px;	
+		table
+			width 100%;
+			tr.top
+				td
+					med(); border none; padding-top 0;
+			td
+				padding 20px 30px; vertical-align middle; border-top 1px solid #e1e1e1;
+			td.pic img
+				display block;
+			td.rating
+				width 110px;
+
+
+
+//	СЛАЙДЕР ЗНАЧЕНИЙ
+// ==========
+.irs
+	height 113px; color #fff; font-size 14px;
+	.irs-line
+		top 48px; background #dfe0e2; height 16px; border-radius 16px; 
+	.irs-diapason
+		top 48px; background #2f8e9d; height 16px;
+	.irs-slider
+		top 42px; width 10px; height 27px; background #56b8c8; border-radius 10px; cursor pointer;
+	.irs-from
+		background #3cb4c7; margin-left 0px; padding 5px 10px; font-size 14px; border-radius 3px 3px 3px 0;
+		&:after
+			position absolute; width 0; height 0; left 0px; bottom -7px; content " ";
+			border-style solid; border-width 7px 7px 0 0;
+			border-color #2f8e9d transparent transparent transparent;
+	.irs-to
+		background #3cb4c7; top 84px; margin-left 0px; padding 5px 10px; font-size 14px; border-radius 3px 0 3px 3px; 
+		&:after
+			position absolute; width 0; height 0; right 0px; top -7px; content " ";
+			border-style solid; border-width 0 0 7px 7px;
+			border-color transparent transparent #2f8e9d transparent;
+	.irs-single
+		background #3cb4c7; padding 5px 10px; font-size 14px; border-radius 3px;
+
+
+.remodal-overlay
+	z-index 1000;
+.remodal
+	z-index 999; 
+	.form
+		padding-top 15px;
+		input
+			width 100%; margin-bottom 15px; padding 15px 15px; full(); 
+		.action
+			text-align center; padding-top 15px;
+			input
+				width auto; 
+				display inline-block; padding 10px 20px; margin 0; full(); border none;
+				font-size 14px; color #fff; text-transform uppercase; semibold(); tdn(); text-align center; white-space nowrap;
+				background #3bb0c3; border-radius 4px;
+				anim();
+				&:hover
+					background #46b5c7;
+					
+
+.remodal.popup-edit
+	position relative;
+	a.close
+		position absolute; right 20px; top 20px; 
+		display block; width 12px; height 12px;
+		z-index 1000
+		anim();
+		background url("../img/main/i-close.png") no-repeat;
+		opacity 0.7;
+		&:hover
+			transform rotate(180deg) scale(1.2); opacity 0.9; tdn();
+	.ins
+		position relative;
+		z-index 999;
+		width auto;
+		max-width 800px;
+		padding 35px 20px;
+	h3
+		margin 0 20px 20px 20px;
+		padding-bottom 20px; 
+		border-bottom 2px solid #E1E1E1;
+	h2.save-ok
+		margin-bottom 0
+		font-size 16px
+	.bname
+		margin 0 20px 20px 20px;
+		padding-bottom 20px; 
+		border-bottom 2px solid #E1E1E1;
+		text-align center
+		h3
+			margin 0 0 10px 0
+			padding 0
+			border none
+		p
+			margin-bottom 15px
+		span.price
+			display inline-block; padding 5px 10px; white-space nowrap;
+			color #fff;
+			background #3cb4c7; border-radius 3px;	
+	.name
+		padding-bottom 15px;
+		font-size 16px; 
+	input, textarea
+		width 100%; max-width 100%; padding 14px 14px; full();
+	table
+		td
+			width 10%; min-width 200px; padding 10px 20px;
+	.sep
+		height 20px;
+	.action
+		text-align center; padding-top 30px;
+		a
+			width auto; 
+			display inline-block; padding 15px 30px; 
+			margin 0 20px;
+			full();
+			border none;
+			font-size 16px; color #fff; 
+			text-transform uppercase; semibold(); tdn(); text-align center; white-space nowrap;
+			background #3bb0c3; border-radius 4px;
+			anim();
+			&:hover
+				background alpha(#3bb0c3, .8);
+	.box-con
+		padding 0 0px
+		margin 0 -20px
+		a.item-line
+			display block
+			padding 15px 40px
+			tdn()
+			background #fff
+			border-bottom 1px solid #e1e1e1
+			anim()
+			.idate 
+				display table-cell
+				padding-right 30px
+			.iname
+				display table-cell
+		a.item-line:nth-child(even)
+			background alpha(#f0f0f0, .4)
+		a.item-line:hover
+			color #fff
+			background #3cb4c7
+		a:visited
+			color #7e8084
+	.box-con-pad
+		padding 20px 20px 0 20px
+		h2, h3,h4
+			margin-bottom 10px
+		span.price
+			display inline-block; padding 5px 10px; white-space nowrap;
+			color #fff;
+			background #3cb4c7; border-radius 3px;
+.remodal.popup-edit-width-big
+	.ins
+		max-width 1000px;

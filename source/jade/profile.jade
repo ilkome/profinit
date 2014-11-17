@@ -1,0 +1,442 @@
+doctype html
+html(lang="ru")
+	include _head
+
+	body
+		#shikarniy
+			.sidebar
+				.logo
+					a(href="#")
+				.user
+					a(href="#").settings.hoverbg
+						.icon
+							.act
+					.age.man (22)
+					.pic
+						img(src="img/content/user-ava.png", alt="")
+					.name анастасия <br>Романовская
+					.contacts
+						div.phone 8 (916) 364-85-92
+						div.email
+							a(href="#") anastas@mail.com
+				.menu
+					ul
+						li.home.active
+							a(href="#") Мой профиль
+						li.career
+							a(href="#") Моя карьера
+						li.work
+							a(href="#") Моя работа
+						li.educ
+							a(href="#") Мое образование
+			
+			//-----------------------------------------------
+
+			.main-page
+				.topper
+					.main-width
+						.info
+							.exit
+								a(href="#")
+									.icon
+							.notafication
+								a(href="#")
+									.icon
+									.count 16
+						.search
+							form(action="#")
+								input(type="text", placeholder="Поиск").filed
+								input(type="submit", value="").submit
+				//-----------------------------------------------
+				.main-width
+					.wbox
+						.wbox-name
+							h2 Мой профиль
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-profile
+								.box
+									.name Дата рождения
+									.content
+										| 18 февраля 1991 
+										span (23 года)
+								.box
+									.name Пол
+									.content Женский
+								.box
+									.name Семейное положение
+									.content Не замужем
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 опыт и образование
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-educ
+								.box
+									.item
+										.date 2015 - 2016
+										.name ООО “Почта росии”
+										.post Cпециалист
+										.desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+									.item
+										.date 2011 - 2012
+										.name Оао “Ренессанс капитал”
+										.post Аналитик
+										.desc Lorem Ipsum - это текст-"рыба", часто
+									.item
+										.date 2005 - 2008
+										.name Простые коммуникации
+										.post UX/UI специалист
+										.desc Lorem Ipsum - это текст-"рыба"
+								.box
+									.item
+										.date 2008 - 2052
+										.name Лицей 1543
+										.post Ученик учителя
+										.desc Lorem Ipsum - это текст-"рыба", часто
+									.item
+										.date 2005 - 2008
+										.name Британская школа дизайна
+										.post UX/UI специалист
+										.desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+									.item
+										.date 2015 - 2016
+										.name МГУ им. м.В. Ломоносова
+										.post.cert Cпециалист
+										.desc Lorem Ipsum - это текст-"рыба"
+							.wbox-more
+								a(href="#") показать еще
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Квалификация
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-qualification
+								.row
+									.item
+										.pic
+											img(src="img/main/i-qualification-1.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-2.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-3.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-4.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-5.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+								.row.hide
+									.item
+										.pic
+											img(src="img/main/i-qualification-1.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-2.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-3.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-4.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.pic
+											img(src="img/main/i-qualification-5.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+							.wbox-more.show-more-qualification
+								a(href="#") показать еще
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Компетенции
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-competence
+								.box
+									.box-name Общее
+									.item Мелкий ремонт оборудования бурильного агрегата и бурильного инструмента
+									.item Осуществляю контроль технического состояния наземного и подземного бурового оборудования
+									.item Выполняю настил полов и производство ремонтных работ
+									.item Центрирую и устанавливаю блоки секций, посадочные площадки, пешеходные мостки
+									.item Выполняю настил полов и производство ремонтных работ
+								.box
+									.box-name Профессиональные
+									.item Ловильные работы
+									.item Выполняю бурение шурфов под сваи оснований морских буровых установок и свай цементным раствором
+									.item Проверяю уровень и плотность электролита в аккумуляторных батареях и заряжать аккумулятор
+									.item Обслуживаю сварочный агрегат
+									.item Ловильные работы
+							.wbox-more.marg
+								a(href="#") показать еще
+					//-----------------------------------------------
+					//- Дополнительные сведения
+					.wbox
+						.wbox-name
+							h2 Дополнительные сведения
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-infomore
+								.item
+									.pic
+										img(src="img/main/i-driver-cert.png", alt="")
+									.content
+										.name Водительское удостоверение
+										.desc Категория А, Категория В
+								.item
+									.pic
+										img(src="img/main/i-foreign-lang.png", alt="")
+									.content
+										.name Знание языков
+										.desc Русский, Английский, Немецкий, Японский
+					//-----------------------------------------------
+					//- Спец. блок
+					.specbox Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+					//-----------------------------------------------
+					//- Комментарии
+					.wbox
+						.wbox-name.no-bd
+							h2 
+								| Отзывы
+								span.count 226
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-comments
+								.write-box
+									a(href="#").write-link Оставить отзыв
+									.inside.hide.animated
+										textarea(placeholder="Оставить отзыв")
+										.files
+											.item 
+												a(href="#") 
+													img(src="img/content/comment-photo-1.png", alt="")
+											.item 
+												a(href="#") 
+													img(src="img/main/i-file-word-b.png", alt="")
+											.item 
+												a(href="#") 
+													img(src="img/content/comment-photo-2.png", alt="")
+											.item 
+												a(href="#") 
+													img(src="img/main/i-file-pdf-b.png", alt="")
+											.add
+												a(href="#").hoverbg
+													.icon
+														.act
+										.rating
+											span Ваша оценка
+											.jq-rating(data-jq-rating-editable="true" data-jq-rating-value="0" data-jq-rating-stars-count="5")
+										.send
+											a(href="#").btn-blue Отправить отзыв
+								.comments
+									.comment
+										.pic 
+											a(href="#") 
+												img(src="img/content/user-ava-2.png", alt="")
+										.content
+											.name-date
+												.name
+													a(href="#") Артемий Знаменский
+												.sep ·  
+												.date 22 секунды назад
+											.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li
+											.text Друзья, спешу поделиться с вами файлами:
+											.files
+												.file.doc
+													a(href="#") Имя документа Word
+											.actions
+												a(href="#").answer.hoverbg Ответить
+													.icon
+														.act
+												a(href="#").like.hoverbg Нравится
+													.icon
+														.act
+									.comment
+										.pic 
+											a(href="#") 
+												img(src="img/content/user-ava-3.png", alt="")
+										.content
+											.name-date
+												.name
+													a(href="#") Екатерина Ульянова
+												.sep ·  
+												.date 3 часа назад
+											.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li.full
+											.text
+												a(href="#").userhl Артемий 
+												| если вы повнимательнее рассмотрите картину, то увидите что опора шланга находиться на затылке. шланг свисает вниз и он не натянут и спокойно себя болтается. в данной картинке никакого давление ножа на шланг не наблюдается. поэтому о точке опоры речь не может идти.
+											.actions
+												a(href="#").answer.hoverbg Ответить
+													.icon
+														.act
+												a(href="#").like.hoverbg Нравится
+													.icon
+														.act
+											.comment
+												.pic 
+													a(href="#") 
+														img(src="img/content/user-ava-2.png", alt="")
+												.content
+													.name-date
+														.name
+															a(href="#") Артемий Знаменский
+														.answer-person
+															a(href="#") Екатерина Ульянова
+														.sep ·  
+														.date 22 секунды назад
+													.text Евгений, точка опоры - место крепления шланга + очень острое лезвие. невозможное возможно © Adidas
+													.actions
+														a(href="#").answer.hoverbg Ответить
+															.icon
+																.act
+														a(href="#").like.hoverbg Нравится
+															.icon
+																.act
+									.comment
+										.pic 
+											a(href="#") 
+												img(src="img/content/user-ava-2.png", alt="")
+										.content
+											.name-date
+												.name
+													a(href="#") Мария Голубева
+												.sep ·  
+												.date неделю назад
+											.rating
+												ul
+													li.full
+													li.full
+													li
+													li
+													li
+											.text 
+												p
+													img(src="img/content/comment-pic.png", alt="")
+												| реалистичное напряжение мышц (и напряжение пожалуй все картины ) присутствует только в области шеи. все остальное похоже бутафорию.
+											.actions
+												a(href="#").answer.hoverbg Ответить
+													.icon
+														.act
+												a(href="#").like.hoverbg Нравится
+													.icon
+														.act
+									.comment.hide
+										.pic 
+											a(href="#") 
+												img(src="img/content/user-ava-2.png", alt="")
+										.content
+											.name-date
+												.name
+													a(href="#") Артемий Знаменский
+												.sep ·  
+												.date 22 секунды назад
+											.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li
+											.text Друзья, спешу поделиться с вами файлами:
+											.files
+												.file.doc
+													a(href="#") Имя документа Word
+											.actions
+												a(href="#").answer.hoverbg Ответить
+													.icon
+														.act
+												a(href="#").like.hoverbg Нравится
+													.icon
+														.act
+									.comment.hide
+										.pic 
+											a(href="#") 
+												img(src="img/content/user-ava-2.png", alt="")
+										.content
+											.name-date
+												.name
+													a(href="#") Артемий Знаменский
+												.sep ·  
+												.date 22 секунды назад
+											.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li
+											.text Друзья, спешу поделиться с вами файлами:
+											.files
+												.file.doc
+													a(href="#") Имя документа Word
+											.actions
+												a(href="#").answer.hoverbg Ответить
+													.icon
+														.act
+												a(href="#").like.hoverbg Нравится
+													.icon
+														.act
+								.comments-show-more
+									a(href="#") Показать еще

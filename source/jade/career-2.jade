@@ -1,0 +1,112 @@
+doctype html
+html(lang="ru")
+	include _head
+
+	body
+		#shikarniy
+			.sidebar
+				.logo
+					a(href="#")
+				.user
+					a(href="#").settings.hoverbg
+						.icon
+							.act
+					.age.man (22)
+					.pic
+						img(src="img/content/user-ava.png", alt="")
+					.name анастасия <br>Романовская
+					.contacts
+						div.phone 8 (916) 364-85-92
+						div.email
+							a(href="#") anastas@mail.com
+				.menu
+					ul
+						li.home
+							a(href="#") Мой профиль
+						li.career.active
+							a(href="#") Моя карьера
+						li.work
+							a(href="#") Моя работа
+						li.educ
+							a(href="#") Мое образование
+				.logo-ibs
+					a(href="#")
+			//-----------------------------------------------
+			.main-page
+				.topper
+					.main-width
+						.info
+							.exit
+								a(href="#")
+									.icon
+							.notafication
+								a(href="#")
+									.icon
+									.count 16
+						.search
+							form(action="#")
+								input(type="text", placeholder="Поиск").filed
+								input(type="submit", value="").submit
+				//-----------------------------------------------
+				.main-width
+					.wbox
+						.wbox-name.no-bd
+							h2 Моя карьера
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+					.wbox-tabs
+						ul.tabs-nav
+							li
+								a(href="#tab-1") карьерные траектории 
+							li
+								a(href="#tab-2") профориентирование
+						.wbox-white#tab-1
+							.wbox-run-test
+								.name-test Название теста. Lorem Ipsum - это текст-рыба
+								.time 14 : 56
+								.steps
+									.hide-bg-l
+									.hide-bg-r
+									ul.pos-3
+										li
+											.count 1
+										li
+											.count 2
+										li.active
+											.ins
+												.bg
+												.count 3
+										li
+											.count 4
+										li
+											.count 5
+										li
+											.count 6
+										li
+											.count 7
+										li
+											.count 6
+								.desc Название вопроса. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. <br>В то время некий безымянный печатник создал большую коллекцию. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах ?
+								.quest
+									.item.active
+										a(href="#") 
+											.sep
+												.circle
+											.name Название теста. Lorem Ipsum - это текст-рыба
+									.item
+										a(href="#")
+											.sep
+												.circle
+											.name В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+									.item
+										a(href="#")
+											.sep
+												.circle
+											.name Его популяризации в новое время послужили публикация листов Letraset
+								.actions
+									a(href="#").back.btn-white.btn-small Назад
+									a(href="#").next.btn-blue.btn-small Далее 
+						.wbox-white#tab-2
+							.empty-tab Вкладка для контента

@@ -1,0 +1,225 @@
+doctype html
+html(lang="ru")
+	include _head
+
+	body
+		#shikarniy
+			.hide.popup
+				.remodal.fixed-top(data-remodal-id="registration")
+					.ins
+						h3 Регистрация
+						.select-wrap
+							input(type="hidden" name="" value="")
+							.select
+								span.title Выберити пользователя
+								span.arrow
+							ul.option-list
+								li(data-value="1") Соискатель
+								li(data-value="2") Образовательная организация
+								li(data-value="2") Работадатель
+								li(data-value="2") Служба занятости
+						div.form.hide
+							div
+								input(type="text", placeholder="Краткое наименование")
+							div
+								input(type="text", placeholder="Электронная почта")
+							.action
+								input(type="submit", value="Зарегистироваться")
+			.sidebar
+				.logo
+					a(href="#")
+				.enter
+					.login
+						.bname Вход в личный кабинет
+						.bbox
+							.fileds
+								input(type="text", placeholder="Имя пользователя").login
+								input(type="password", placeholder="Пароль").pas
+							.actions
+								a(href="#") Забыли пароль?
+								input(type="submit", value="Войти")
+					.reg
+						a(href="#registration") Регистрация
+			//-----------------------------------------------
+			.main-page.remodal-bg
+				.topper
+					.menu-wrap
+						table
+							tr
+								td
+									.select-wrap
+										input(type="hidden" name="" value="")
+										.select
+											span.title Выберити пользователя
+											span.arrow
+										ul.option-list
+											li(data-value="1") Соискатель
+											li(data-value="2") Образовательная организация
+											li(data-value="2") Работадатель
+											li(data-value="2") Служба занятости
+								td
+									.select-wrap
+										input(type="hidden" name="" value="")
+										.select
+											span.title Выберити пользователя
+											span.arrow
+										ul.option-list
+											li(data-value="1") Соискатель
+											li(data-value="2") Образовательная организация
+											li(data-value="2") Работадатель
+											li(data-value="2") Служба занятости
+								td
+									.select-wrap
+										input(type="hidden" name="" value="")
+										.select
+											span.title Выберити пользователя
+											span.arrow
+										ul.option-list
+											li(data-value="1") Соискатель
+											li(data-value="2") Образовательная организация
+											li(data-value="2") Работадатель
+											li(data-value="2") Служба занятости
+				//-----------------------------------------------
+				.main-width
+					.wbox
+						.wbox-content.no-top-pad
+							.wbox-welcome
+								h1.align-center Добро пожаловать!
+								.text
+									p.prof
+										| ПРОФ
+										span ИНТЕГРАТОР
+									p Это сервис, позволяющий решить задачи в области профориентирования, образования и трудоустройства.
+									p Это сервис, позволяющий решить задачи в области профориентирования, образования и трудоустройства.
+									p Профинтегратор поможет ответить на важные вопросы.
+								.prev
+									a(href="#").hoverbg.slider-nav.left.js-slider-index-left
+										.icon
+											.act
+									a(href="#").hoverbg.slider-nav.right.js-slider-index-right
+										.icon
+											.act
+									.mac
+									.slider-index.js-slider-index
+										.slide
+											p.top Где работать? Кого принять на работу?
+											p.pic
+												img(src="img/content/screen-1.jpg", alt="")
+											p
+												a(href="#") 4 574 234 
+												| открытых вакансий
+										.slide
+											p.top Другой текст
+											p.pic
+												img(src="img/content/screen-2.jpg", alt="")
+											p
+												a(href="#") меньше
+												| открытых вакансий
+										.slide
+											p.top Где работать? Кого принять на работу?
+											p.pic
+												img(src="img/content/screen-3.jpg", alt="")
+											p
+												a(href="#") 4 574 234 
+												| открытых вакансий
+										.slide
+											p.top Другой текст
+											p.pic
+												img(src="img/content/screen-4.jpg", alt="")
+											p
+												a(href="#") меньше
+												| открытых вакансий
+					//-----------------------------------------------
+					.wbox-table2
+						.cell
+							.wbox
+								.wbox-name.no-bd
+									h2 Образование
+							.wbox-tabs
+								ul.tabs-nav
+									li
+										a(href="#tab-1") Программы
+									li
+										a(href="#tab-2") Организации
+								.univ-items#tab-1
+									.item
+										h3 231294.51 “Журналистика”
+										p
+											a(href="#") МГУ им. Ломоносова
+										p Бакалавриат, 4 года
+									.item
+										h3 231294.51 “Журналистика”
+										p 
+											a(href="#") МГУ им. Ломоносова
+										p Бакалавриат, 4 года
+									.item
+										h3 231294.51 “Журналистика”
+										p
+											a(href="#") МГУ им. Ломоносова
+										p Бакалавриат, 4 года
+									.more
+										a(href="#") Показать все
+								.univ-items#tab-2
+									.item
+										h3 231294.51 “Журналистика 2”
+										p
+											a(href="#") МГУ им. Ломоносова
+										p Бакалавриат, 4 года
+									.item
+										h3 231294.51 “Журналистика”
+										p 
+											a(href="#") МГУ им. Ломоносова
+										p Бакалавриат, 4 года
+									.item
+										h3 231294.51 “Журналистика”
+										p
+											a(href="#") МГУ им. Ломоносова
+										p Бакалавриат, 4 года
+									.more
+										a(href="#") Показать все
+						.cell
+							.wbox
+								.wbox-name.no-bd
+									h2 Образование
+							.wbox-tabs
+								ul.tabs-nav
+									li
+										a(href="#tab-3") Программы
+									li
+										a(href="#tab-4") Организации
+								.univ-items#tab-3
+									.item
+										h3 Инженер-технолог 1
+										p 30 000 рубле
+										p
+											a(href="#") 15 предложений
+									.item
+										h3 Специалист по управлению качеством
+										p 30 000 рубле
+										p
+											a(href="#") 15 предложений
+									.item
+										h3 Инженер-технолог
+										p 30 000 рубле
+										p
+											a(href="#") 15 предложений
+									.more
+										a(href="#") Показать все
+								.univ-items#tab-4
+									.item
+										h3 Инженер-технолог 4
+										p 30 000 рубле
+										p
+											a(href="#") 15 предложений
+									.item
+										h3 Специалист по управлению качеством
+										p 30 000 рубле
+										p
+											a(href="#") 15 предложений
+									.item
+										h3 Инженер-технолог
+										p 30 000 рубле
+										p
+											a(href="#") 15 предложений
+									.more
+										a(href="#") Показать все

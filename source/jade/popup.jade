@@ -1,0 +1,672 @@
+doctype html
+html(lang="ru")
+	include _head
+
+	body
+		#shikarniy
+			.hide.popup
+				.remodal.popup-edit(data-remodal-id="popup-save-ok")
+					a(href="#").close.remodal-cancel
+					.ins
+						h2.align-center.save-ok Успешно сохранено!
+						.action
+							a(href="#").remodal-confirm Ок			
+				.remodal.popup-edit(data-remodal-id="popup-vac")
+					a(href="#").close.remodal-cancel
+					.ins
+						.bname
+							h3 Управление качеством
+							p Отдел контроля качества
+							span.price 1 000 000 рублей
+						.box-con
+							a(href="/some-page").item-line
+								.idate 17 октября 2014
+								.iname КЛИМОВА АНАСТАСИЯ КОНСТАНТИНОВНА
+							a(href="/some-page-2").item-line
+								.idate 14 октября 2014
+								.iname Иванов АНАСТАСИЯ КОНСТАНТИНОВНА
+							a(href="#").item-line
+								.idate 10 октября 2014
+								.iname КЛИМОВА АНАСТАСИЯ КОНСТАНТИНОВНА
+							a(href="/some-page-3").item-line
+								.idate 6 сентября 2014
+								.iname Сидоров АНАСТАСИЯ КОНСТАНТИНОВНА
+							a(href="/some-page").item-line
+								.idate 17 октября 2014
+								.iname КЛИМОВА АНАСТАСИЯ КОНСТАНТИНОВНА
+							a(href="/some-page-2").item-line
+								.idate 14 октября 2014
+								.iname Иванов АНАСТАСИЯ КОНСТАНТИНОВНА
+							a(href="#").item-line
+								.idate 10 октября 2014
+								.iname КЛИМОВА АНАСТАСИЯ КОНСТАНТИНОВНА
+							a(href="/some-page-3").item-line
+								.idate 6 сентября 2014
+								.iname Сидоров АНАСТАСИЯ КОНСТАНТИНОВНА
+						.action
+							a(href="#").remodal-cancel Закрыть
+				//-----------------------------------------------
+				.remodal.popup-edit(data-remodal-id="edit-my-profile")
+					a(href="#").close.remodal-cancel
+					.ins
+						h3 Редактировать мой профиль
+						table
+							tr
+								td
+									.name Дата рождения
+									.filed
+										input(type="text", placeholder="Дата рождения", value="12.03.1990")
+								td
+									.name Пол
+									.select-wrap
+										input(type="hidden" name="" value="")
+										.select
+											span.title Мужской
+											span.arrow
+										ul.option-list
+											li(data-value="1") Женский
+											li(data-value="2") Мужской
+								td
+									.name Семейное положение
+									.filed
+										input(type="text", placeholder="Семейное положение", value="Женат")
+							tr
+								td
+									.name Имя
+									.filed
+										input(type="text", placeholder="Имя", value="Илья")
+								td
+									.name Телефон
+									.filed
+										input(type="text", placeholder="Телефон", value="+7 915 976 07 15")
+								td
+									.name Электропочта
+									.filed
+										input(type="text", placeholder="Электропочта", value="ilya@shikarniy.com")
+							tr
+								td(colspan="3")
+									.name Опишите себя
+									textarea(placeholder="Заполните") Большую роль в популяризации психодрамы сыграл институт социометрии, который генезис последовательно дает феноменологический онтогенез речи. Генезис жизненно понимает гештальт. Придерживаясь жестких принципов социального Дарвинизма, бессознательное индивидуально начинает возрастной стресс. Конформизм, иcходя из того, что аннигилирует контраст.
+						.action
+							a(href="#") Сохранить изменения
+				//-----------------------------------------------
+				.remodal.popup-edit(data-remodal-id="edit-my-profile-2")
+					a(href="#").close.remodal-cancel
+					.ins
+						h3 Редактировать мой профиль
+						table
+							tr
+								td
+									.name Дата рождения
+									.filed
+										input(type="text", placeholder="Дата рождения", value="12.03.1990")
+								td
+									.name Семейное положение
+									.filed
+										input(type="text", placeholder="Семейное положение", value="Женат")
+							tr
+								td
+									.name Имя
+									.filed
+										input(type="text", placeholder="Имя", value="Илья")
+								td
+									.name Телефон
+									.filed
+										input(type="text", placeholder="Телефон", value="+7 915 976 07 15")
+							tr
+								td(colspan="2")
+									.name Опишите себя
+									textarea(placeholder="Заполните") Большую роль в популяризации психодрамы сыграл институт социометрии, который генезис последовательно дает феноменологический онтогенез речи. Генезис жизненно понимает гештальт. Придерживаясь жестких принципов социального Дарвинизма, бессознательное индивидуально начинает возрастной стресс. Конформизм, иcходя из того, что аннигилирует контраст.
+						.action
+							a(href="#") Сохранить изменения
+				//-----------------------------------------------
+				.remodal.popup-edit(data-remodal-id="edit-my-profile-3")
+					a(href="#").close.remodal-cancel
+					.ins
+						h3 Редактировать мой профиль
+						table
+							tr
+								td
+									.name Дата рождения
+									.filed
+										input(type="text", placeholder="Дата рождения", value="12.03.1990")
+							tr
+								td
+									.name Имя
+									.filed
+										input(type="text", placeholder="Имя", value="Илья")
+							tr
+								td(colspan="2")
+									.name Опишите себя
+									textarea(placeholder="Заполните") Большую роль в популяризации психодрамы сыграл институт социометрии, который генезис последовательно дает феноменологический онтогенез речи. Генезис жизненно понимает гештальт. Придерживаясь жестких принципов социального Дарвинизма, бессознательное индивидуально начинает возрастной стресс. Конформизм, иcходя из того, что аннигилирует контраст.
+						.action
+							a(href="#") Сохранить изменения
+				//-----------------------------------------------
+				.remodal.popup-edit.popup-edit-width-big(data-remodal-id="show-info")
+					a(href="#").close.remodal-cancel
+					.ins
+						.bname
+							h3 Инормация
+							p Описание блока
+						.box-con-pad
+							h4 Специалист по управлению качеством
+							p.blue Отдел контроля качества
+							p
+								span.price 1 000 000 рублей
+
+							h4 Потребительский генезис: методология и особенности
+							p Чувство представляет собой архетип. Бихевиоризм неустойчив. Действие прочно притягивает опасный закон. 
+								a(href="#") Сознание 
+								| , как справедливо считает Ф.Энгельс, интегрирует эриксоновский гипноз. Тест изменяем. Агрессия, конечно, вызывает сублимированный генезис.
+							p Коллективное бессознательное начинает генезис, хотя Уотсон это отрицал. Представленный контент-анализ является психолингвистическим в своей основе, таким образом ригидность откровенна. Очевидно, что генезис притягивает конформизм, о чем и писал А.Маслоу в своей работе "Мотивация и личность". Предсознательное мгновенно.
+						.action
+							a(href="#").remodal-confirm Закрыть
+				//-----------------------------------------------
+				.remodal.popup-edit(data-remodal-id="edit-my-profile-4")
+					a(href="#").close.remodal-cancel
+					.ins
+						h3 Добавить образование / опыт
+						table
+							tr
+								td
+									.name Год начала работы
+									.filed
+										input(type="text", placeholder="Год начала работы", value="12.03.1990")
+								td
+									.name Год окончания работы
+									.filed
+										input(type="text", placeholder="Год начала работы", value="12.03.1990")
+							tr
+								td
+									.name Место работы
+									.select-wrap
+										input(type="hidden" name="" value="")
+										.select
+											span.title Место работы
+											span.arrow
+										ul.option-list
+											li(data-value="1") Женский
+											li(data-value="2") Мужской
+								td
+									.name Должность
+									.select-wrap
+										input(type="hidden" name="" value="")
+										.select
+											span.title Должность
+											span.arrow
+										ul.option-list
+											li(data-value="1") Женский
+											li(data-value="2") Мужской
+						.action
+							a(href="#") Добавить
+				//-----------------------------------------------
+				.remodal.popup-edit.popup-edit-width-big(data-remodal-id="edit-vac-more")
+					a(href="#").close.remodal-cancel
+					.ins
+						h3 Потребность в работниках
+						table
+							tr
+								td
+									.name Специальность
+									.filed
+										input(type="text", placeholder="Специальность", value="Управление качеством")
+								td
+									.name Отдел
+									.filed
+										input(type="text", placeholder="Отдел", value="Отдел контроля качества")
+								td
+									.name Заработок
+									.filed
+										input(type="text", placeholder="Заработок", value="100 000 рублей")
+						.action
+							a(href="#edit-vac-more-text") Подробнее
+							a(href="#popup-save-ok").js-close-edit-mode Сохранить
+				//-----------------------------------------------
+				.remodal.popup-edit.popup-edit-width-big(data-remodal-id="edit-vac-more-text")
+					a(href="#").close.remodal-cancel
+					.ins
+						h3 Потребность в работниках
+						table
+							tr
+								td
+									.name Специальность
+									.filed
+										input(type="text", placeholder="Специальность", value="Управление качеством")
+								td
+									.name Отдел
+									.filed
+										input(type="text", placeholder="Отдел", value="Отдел контроля качества")
+								td
+									.name Заработок
+									.filed
+										input(type="text", placeholder="Заработок", value="100 000 рублей")
+							tr
+								td(colspan="3")
+									textarea(placeholder="Описание") Чувство представляет собой архетип. Бихевиоризм неустойчив. Действие прочно притягивает опасный закон. Сознание, как справедливо считает Ф.Энгельс, интегрирует эриксоновский гипноз. Тест изменяем. Агрессия, конечно, вызывает сублимированный генезис.
+						.action
+							a(href="#edit-vac-more") Назад
+							a(href="#popup-save-ok").js-close-edit-mode Сохранить
+			//-----------------------------------------------
+			.sidebar
+				.logo
+					a(href="#")
+				.user
+					a(href="#").settings.hoverbg
+						.icon
+							.act
+					.age.man (22)
+					.pic
+						img(src="img/content/user-ava.png", alt="")
+					.name анастасия <br>Романовская
+					.contacts
+						div.phone 8 (916) 364-85-92
+						div.email
+							a(href="#") anastas@mail.com
+				.menu
+					ul
+						li.home.active
+							a(href="#") Мой профиль
+						li.career
+							a(href="#") Моя карьера
+						li.work
+							a(href="#") Моя работа
+						li.educ
+							a(href="#") Мое образование
+			
+			//-----------------------------------------------
+
+			.main-page
+				.topper
+					.main-width
+						.info
+							.exit
+								a(href="#")
+									.icon
+							.notafication
+								a(href="#")
+									.icon
+									.count 16
+						.search
+							form(action="#")
+								input(type="text", placeholder="Поиск").filed
+								input(type="submit", value="").submit
+				//-----------------------------------------------
+				.main-width
+					.wbox
+						.wbox-name
+							h2 Попачики
+						.wbox-content
+							ul
+								li
+									a(href="#edit-my-profile") Редактировать мой профиль
+								li
+									a(href="#edit-my-profile-2") Редактировать мой профиль 2 колонки
+								li
+									a(href="#edit-my-profile-3") Редактировать мой профиль 1 колонка
+								li
+									a(href="#edit-my-profile-4") Добавить образование
+								li
+									a(href="#edit-my-profile-4") Редактировать образование
+								li
+									a(href="#show-info") Подробная инфа об образовате
+								li
+									a(href="#popup-save-ok") Сохранилось 
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 опыт и образование
+						.wbox-menu.wbox-menu-drop
+							a(href="#").hoverbg
+								.icon
+									.act
+							.dropmenu
+								ul
+									li
+										a(href="#edit-my-profile-4").add Добавить
+									li
+										a(href="#").edit Редактировать
+						.wbox-menu.save
+							a(href="#")
+						.wbox-content
+							.wbox-educ
+								.box
+									.item
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2015 - 2016
+										.name ООО “Почта росии”
+										.post Cпециалист
+										.desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+									.item
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2011 - 2012
+										.name Оао “Ренессанс капитал”
+										.post Аналитик
+										.desc Lorem Ipsum - это текст-"рыба", часто
+									.item
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2005 - 2008
+										.name Простые коммуникации
+										.post UX/UI специалист
+										.desc Lorem Ipsum - это текст-"рыба"
+									.item.hide
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2011 - 2012
+										.name Оао “Ренессанс капитал”
+										.post Аналитик
+										.desc Lorem Ipsum - это текст-"рыба", часто
+									.item.hide
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2005 - 2008
+										.name Простые коммуникации
+										.post UX/UI специалист
+										.desc Lorem Ipsum - это текст-"рыба"
+								.box
+									.item
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2008 - 2052
+										.name Лицей 1543
+										.post Ученик учителя
+										.desc Lorem Ipsum - это текст-"рыба", часто
+									.item
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2005 - 2008
+										.name Британская школа дизайна
+										.post UX/UI специалист
+										.desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+									.item
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2015 - 2016
+										.name МГУ им. м.В. Ломоносова
+										.post.cert Cпециалист
+										.desc Lorem Ipsum - это текст-"рыба"
+									.item.hide
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2011 - 2012
+										.name Оао “Ренессанс капитал”
+										.post Аналитик
+										.desc Lorem Ipsum - это текст-"рыба", часто
+									.item.hide
+										.item-edit
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.date 2005 - 2008
+										.name Простые коммуникации
+										.post UX/UI специалист
+										.desc Lorem Ipsum - это текст-"рыба"
+							.wbox-more
+								a(href="#") показать еще
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Квалификация
+						.wbox-menu.wbox-menu-drop
+							a(href="#").hoverbg
+								.icon
+									.act
+							.dropmenu
+								ul
+									li
+										a(href="#edit-my-profile-4").add Добавить
+									li
+										a(href="#").edit Редактировать
+						.wbox-menu.save
+							a(href="#")
+						.wbox-content
+							.wbox-qualification
+								.row
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-1.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-2.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-3.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-4.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-5.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+								.row.hide
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-1.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-2.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-3.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-4.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+									.item
+										.item-edit.item-edit-sm
+											a(href="#edit-my-profile-2").btn-blue Редактировать
+										.pic
+											img(src="img/main/i-qualification-5.png", alt="")
+										.content
+											.name CFA 1 level
+											.desc #340239 <br>19.10.13
+							.wbox-more.show-more-qualification
+								a(href="#") показать еще
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Потребность в работниках
+						.wbox-menu.wbox-menu-drop
+							a(href="#").hoverbg
+								.icon
+									.act
+							.dropmenu
+								ul
+									li
+										a(href="#edit-my-profile-4").add Добавить
+									li
+										a(href="#").edit Редактировать
+						.wbox-menu.save
+							a(href="#")
+						.wbox-content
+							.wbox-workers-need
+								.filter
+									.filter-table
+										.cell
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Направление подготовки
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Должность
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+								.table-wrap
+									table
+										thead
+											tr
+												td.name
+													| Должность 
+													a(href="#").sort
+												td.date Дата открытия
+												td.answers Отклики
+										tbody
+											tr
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date
+													p 10 октября 2014 (1 день)
+													p
+														span.sbblue Не срочно
+												td.answers 
+													.item-edit.item-edit-sm
+														a(href="#edit-vac-more").btn-blue Редактировать
+													a(href="#popup-vac")
+														| 8 ПРОГРАММ
+														div
+															| (5 новых)
+											tr
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers
+													.item-edit.item-edit-sm
+														a(href="#edit-vac-more").btn-blue Редактировать
+													a(href="#popup-vac")
+														| 8 ПРОГРАММ
+														div
+															| (5 новых)
+											tr
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													.item-edit.item-edit-sm
+														a(href="#edit-vac-more").btn-blue Редактировать
+													a(href="#popup-vac")
+														| 8 ПРОГРАММ
+														div
+															| (5 новых)
+											tr.item.hide
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													.item-edit.item-edit-sm
+														a(href="#edit-vac-more").btn-blue Редактировать
+													a(href="#popup-vac")
+														| 8 ПРОГРАММ
+														div
+															| (5 новых)
+							.wbox-more.margn-side.table-items.margin-bottom
+								a(href="#") показать еще
+							.wbox-list-all
+								p
+									| Вакансий:  
+									a(href="#") 125
+								a(href="#").right Архив вакансий
+								a(href="#") Список всех образовательных программ
+					//-----------------------------------------------
+					//- Дополнительные сведения
+					.wbox
+						.wbox-name
+							h2 Дополнительные сведения
+						.wbox-menu.wbox-menu-drop
+							a(href="#").hoverbg
+								.icon
+									.act
+							.dropmenu
+								ul
+									li
+										a(href="#edit-my-profile-4").add Добавить
+									li
+										a(href="#").edit Редактировать
+						.wbox-menu.save
+							a(href="#")
+						.wbox-content
+							.wbox-infomore
+								.item
+									.item-edit
+										a(href="#edit-my-profile-2").btn-blue Редактировать
+									.pic
+										img(src="img/main/i-driver-cert.png", alt="")
+									.content
+										.name Водительское удостоверение
+										.desc Категория А, Категория В
+								.item
+									.item-edit
+										a(href="#edit-my-profile-2").btn-blue Редактировать
+									.pic
+										img(src="img/main/i-foreign-lang.png", alt="")
+									.content
+										.name Знание языков
+										.desc Русский, Английский, Немецкий, Японский

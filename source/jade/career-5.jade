@@ -1,0 +1,192 @@
+doctype html
+html(lang="ru")
+	include _head
+
+	body
+		#shikarniy
+			.sidebar
+				.logo
+					a(href="#")
+				.user
+					a(href="#").settings.hoverbg
+						.icon
+							.act
+					.age.man (22)
+					.pic
+						img(src="img/content/user-ava.png", alt="")
+					.name анастасия <br>Романовская
+					.contacts
+						div.phone 8 (916) 364-85-92
+						div.email
+							a(href="#") anastas@mail.com
+				.menu
+					ul
+						li.home
+							a(href="#") Мой профиль
+						li.career.active
+							a(href="#") Моя карьера
+						li.work
+							a(href="#") Моя работа
+						li.educ
+							a(href="#") Мое образование
+				.logo-ibs
+					a(href="#")
+			//-----------------------------------------------
+			.main-page
+				.topper
+					.main-width
+						.info
+							.exit
+								a(href="#")
+									.icon
+							.notafication
+								a(href="#")
+									.icon
+									.count 16
+						.search
+							form(action="#")
+								input(type="text", placeholder="Поиск").filed
+								input(type="submit", value="").submit
+				//-----------------------------------------------
+				.main-width
+					.wbox
+						.wbox-name.no-bd
+							h2 Моя карьера
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+					.wbox-tabs
+						ul.tabs-nav
+							li
+								a(href="#tab-1") карьерные траектории 
+							li
+								a(href="#tab-2") профориентирование
+						#tab-1
+							.wbox-white
+								.wbox-run-test
+									.name-test Название теста. Lorem Ipsum - это текст-рыба
+									.time 00 : 00
+									.steps
+										.hide-bg-l
+										.hide-bg-r
+										ul.end
+											li
+												.count 15
+											li
+												.count 16
+											li
+												.count 17
+											li
+												.count 18
+											li
+												.count 19
+											li.active
+												.ins
+													.bg
+													.count 20
+									.results
+										.name
+											h3 Резултаты тестирования
+										.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio beatae pariatur, esse sed ipsa ratione libero optio perferendis hic. Quibusdam perferendis, soluta rem repellendus omnis deleniti. Quas minima voluptate dolores deleniti reiciendis nulla necessitatibus soluta dicta eligendi, id sed dignissimos pariatur illo asperiores architecto! Fuga suscipit, ex officiis culpa! 
+										.box
+											.line
+												.left Многие думают, что Lorem Ipsum - взятый с потолка набор слов
+												.graph
+													.ins
+														.graph-sep
+														.graph-right
+															.active(style="width:80%") 4
+												.right Его корни уходят в один фрагмент классической латыни
+											.line
+												.left Это делает предлагаемый здесь
+												.graph
+													.ins
+														.graph-sep
+														.graph-left
+															.active(style="width:40%") 2
+												.right Его корни уходят в один фрагмент классической латыни
+											.line
+												.left Также все другие известные
+												.graph
+													.ins
+														.graph-sep
+														.graph-left
+															.active(style="width:100%") 5
+												.right За прошедшие годы текст Ipsum 
+											.line
+												.left Также все другие известные
+												.graph
+													.ins
+														.graph-sep
+														.graph-right
+															.active(style="width:60%") 3
+												.right Его корни уходят в один фрагмент классической латыни
+											.line
+												.left Многие думают, что Lorem Ipsum - взятый с потолка набор слов
+												.graph
+													.ins
+														.graph-sep
+														.graph-right
+															.active(style="width:20%") 1
+												.right В результате сгенерированный
+							.wbox-white.profession-recom
+								.simular
+									table
+										tr.top
+											td.name Название профессии
+											td.pic
+											td.code Код
+											td.rating Рейтинг
+										tr
+											td.name Помощник бурильщика эксплуатационного и разведочного бурения скважин на нефть и газ
+											td.pic
+												img(src="img/main/i-circle-color.png", alt="")
+											td.code 16839
+											td.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li
+										tr
+											td.name Оператор по подготовке скважин к капитальному и подземному ремонтам
+											td.pic
+												img(src="img/main/i-circle-color.png", alt="")
+											td.code 78451
+											td.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li.full
+										tr
+											td.name Помощник бурильщика плавучего бурильного агрегата в море
+											td.pic
+												img(src="img/main/i-circle-color.png", alt="")
+											td.code 16839
+											td.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li
+										tr
+											td.name Оператор по подготовке скважин к капитальному и подземному ремонтам
+											td.pic
+												img(src="img/main/i-circle-color.png", alt="")
+											td.code 78451
+											td.rating
+												ul
+													li.full
+													li.full
+													li.full
+													li.full
+													li.full
+								.wbox-more
+									a(href="#") показать еще
+						.wbox-white#tab-2
+							.empty-tab Вкладка для контента

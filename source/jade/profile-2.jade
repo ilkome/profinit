@@ -1,0 +1,752 @@
+doctype html
+html(lang="ru")
+	include _head
+	script(src="js/jquery.slideRow.js", type="text/javascript")
+
+	body
+		#shikarniy
+			.sidebar
+				.logo
+					a(href="#")
+				.user
+					a(href="#").settings.hoverbg
+						.icon
+							.act
+					.pic
+						img(src="img/content/user-ava2.png", alt="")
+					.name Томский базовый <br>Медицинский колледж
+					.contacts
+						div.phone 8 (916) 364-85-92
+						div.email
+							a(href="#") anastas@mail.com
+						div.site
+							a(href="#") www.tbmk.com
+				.menu
+					ul
+						li.home
+							a(href="#") Мой профиль
+						li.educ.vac
+							a(href="#") Профессиональное <br>образование
+						li.educ-ext.vac.active
+							a(href="#") Дополнительное Профессиональное образование
+				.logo-ibs
+					a(href="#")
+			//-----------------------------------------------
+			.main-page
+				.atlas-circle
+					.ins
+						.ins2
+							.ins-content
+								.close
+									a(href="#").close-atlas-circle
+								.circle
+									a(href="#") 
+										img(src="img/main/circle-color-b.png", alt="")
+								.content
+									.content-name Человек-Техника
+									.text Вид трудовой деятельности человека, который требует определенного уровня специальных знаний и умений (квалификации). Инженер - это специалист с высшим техническим образованием. В России каждый третий дипломированный специалист с высшим образованием является инженером.
+									.selected
+										h3 Выбранные направления
+										.item
+											.name Человек техника
+											.del
+												a(href="#")
+								.apply
+									a(href="#").btn-blue Применить 
+				//-----------------------------------------------
+				.topper
+					.main-width
+						.info
+							.exit
+								a(href="#")
+									.icon
+							.notafication
+								a(href="#")
+									.icon
+									.count 16
+						.search
+							form(action="#")
+								input(type="text", placeholder="Поиск").filed
+								input(type="submit", value="").submit
+				//-----------------------------------------------
+				.user-welcome
+					.inform.bg-profile-2
+						.wrapper
+							.educ
+								.item Основные профессиональные <br>образовательные программы
+								.item Дополнительные профессиональные <br>образовательные программы
+							.menu
+								a(href="#").hoverbg
+									.icon
+										.act
+							.phone 8 (916) 364-85-92
+							.email
+								a(href="#") anastas@mail.com
+							.user
+								.pic
+									.write
+										a(href="#").hoverbg
+											.icon
+												.act
+									.favorite
+										a(href="#").hoverbg
+											.icon
+												.act
+									img(src="img/content/user-ava.png", alt="")
+								.name
+									a(href="#") МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ <br>имени Н.Э.Баумана
+								.site
+									a(href="#") www.msu.ru
+				//-----------------------------------------------
+				.main-width
+					.wbox
+						.wbox-name
+							h2 Общая информация
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-text-map
+								.text
+									h3 московский государственный технический университет имени н.э.баумана
+									p
+										a(href="#") 1126135, Москва, Лефортовская набережная, 26/2
+									p Руководитель: Садовничий Константин Константинович
+									p Год основания: 1939
+									p Тип учреждения: Государственное 
+									p Ведомственная принадлежность: Минобразование РФ
+									p Учредитель: наименование
+									p Филиалы: “Стрела” (г. Жуковский, Московская обл.)
+								.map
+									img(src="img/content/map-1.jpg", alt="")
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Сведения о лицензинировании и государтсвенной аккредитации
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-license
+								.item
+									.pic
+										a(href="#") 
+											img(src="img/main/i-license.png", alt="")
+									.content
+										.name
+											a(href="#") Лицензия
+										.desc #340239-123-5221<br>19.10.13
+								.item
+									.pic
+										a(href="#") 
+											img(src="img/main/i-license.png", alt="")
+									.content
+										.name
+											a(href="#") Свидетельство<br>о государственной аккредитации
+										.desc #340239-123-5221<br>19.10.13
+								.item
+									.pic
+										a(href="#") 
+											img(src="img/main/i-license.png", alt="")
+									.content
+										.name
+											a(href="#") Свидетельство
+										.desc #340239 <br>19.10.13
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Образовательные программы
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-programms
+								.filter
+									.filter-table
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Тип программы
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Уровень образования
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Направление подготовки
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+								.box
+									.item
+										.left
+											.name
+												a(href="#") 231294.51 “Журналистика”
+											.content
+												p
+													strong Уровень образования:
+													|  Бакалавриат
+												p 
+													strong Направления подготовки:
+													|  Журналистика
+												p
+													strong Тип программы:
+													|  Государственное 
+										.right
+											.price
+												| Стоимость обучения 
+												span 1 000 000 рублей
+											.time
+												strong Продолжительсть обучения:
+												|  4 года
+									.item
+										.left
+											.name
+												a(href="#") 231294.51 “Журналистика”
+											.content
+												p
+													strong Уровень образования:
+													|  Бакалавриат
+												p 
+													strong Направления подготовки:
+													|  Журналистика
+												p
+													strong Тип программы:
+													|  Государственное 
+										.right
+											.price
+												| Стоимость обучения 
+												span 1 000 000 рублей
+											.time
+												strong Продолжительсть обучения:
+												|  4 года
+									.item.hide
+										.left
+											.name
+												a(href="#") 231294.51 “Журналистика”
+											.content
+												p
+													strong Уровень образования:
+													|  Бакалавриат
+												p 
+													strong Направления подготовки:
+													|  Журналистика
+												p
+													strong Тип программы:
+													|  Государственное 
+										.right
+											.price
+												| Стоимость обучения 
+												span 1 000 000 рублей
+											.time
+												strong Продолжительсть обучения:
+												|  4 года
+									.item.hide
+										.left
+											.name
+												a(href="#") 231294.51 “Журналистика”
+											.content
+												p
+													strong Уровень образования:
+													|  Бакалавриат
+												p 
+													strong Направления подготовки:
+													|  Журналистика
+												p
+													strong Тип программы:
+													|  Государственное 
+										.right
+											.price
+												| Стоимость обучения 
+												span 1 000 000 рублей
+											.time
+												strong Продолжительсть обучения:
+												|  4 года
+
+							.wbox-more.margn-side
+								a(href="#") показать еще
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Дополнительное профессиональное образование
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-educ-ext
+								.filter
+									.filter-table
+										.cell
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Уровень образования
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Направление подготовки
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+								
+								.box.box-head
+									.name Образовательная программа
+									.students Потенциальные обучающиеся
+									.date Плановый период <br>обучения
+								.box
+									.item
+										.ins
+											.name
+												h3 Информационые системы и технологии
+												a(href="#") Курсы профессиональной переподготовки
+												div
+													span 1 000 000 рублей
+											.students
+												p Климова Анастасия Сергеевна
+											.date Февраль 2015
+									.item
+										.ins
+											.name
+												p
+													a(href="#") 12313.4 1 “Журналистика”
+												p 
+													strong СПО
+												p Прикладная информатика
+											.students
+												p 3 ЧЕЛОВЕКА
+											.date Февраль 2015
+									.item
+										.ins
+											.name
+												h3 Информационые системы и технологии
+												a(href="#") Курсы профессиональной переподготовки
+												div
+													span 1 000 000 рублей
+											.students
+												p Климова Анастасия Сергеевна
+												p
+													a(href="#") ООО “Первая открытая типография” (3)
+											.date Февраль 2015									
+									.item.hide
+										.ins
+											.name
+												h3 Информационые системы и технологии
+												a(href="#") Курсы профессиональной переподготовки
+												div
+													span 1 000 000 рублей
+											.students
+												p Климова Анастасия Сергеевна
+											.date Февраль 2015
+									.item.hide
+										.ins
+											.name
+												p
+													a(href="#") 12313.4 1 “Журналистика”
+												p 
+													strong СПО
+												p Прикладная информатика
+											.students
+												p 3 ЧЕЛОВЕКА
+											.date Февраль 2015
+									.item.hide
+										.ins
+											.name
+												h3 Информационые системы и технологии
+												a(href="#") Курсы профессиональной переподготовки
+												div
+													span 1 000 000 рублей
+											.students
+												p Климова Анастасия Сергеевна
+												p
+													a(href="#") ООО “Первая открытая типография” (3)
+											.date Февраль 2015
+							.wbox-more.margn-side.margin-bottom
+								a(href="#") показать еще
+							.wbox-list-all
+								a(href="#") Список всех образовательных программ
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Потребность в дополнительном образовании
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-educ-need
+								.filter
+									.filter-table
+										.cell
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Направление подготовки
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Должность
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+								.table-wrap
+									table
+										thead
+											tr
+												td.name Образовательная программа
+												td.post Должность
+												td.date Период обучения
+												td.programms Предложенные программы
+										tbody
+											tr
+												td.name
+													h3 Управление качеством
+													p
+														a Стажировка
+													p 3 человека
+												td.post 
+													a(href="#") Специалист по управлению качеством
+												td.date 9-10.2014
+												td.programms 
+													| 8 ПРОГРАММ 
+													a(href="#") (5 новых)
+											tr
+												td.name
+													h3 Педагогика
+													p
+														a Курсы повышения квалификации
+													p 5 человека
+												td.post 
+													a(href="#") Методист
+												td.date 9-10.2014
+												td.programms 
+													| 11 ПРОГРАММ 
+													a(href="#") (2 новые)
+											tr.item.hide
+												td.name
+													h3 Управление качеством
+													p
+														a Стажировка
+													p 3 человека
+												td.post 
+													a(href="#") Специалист по управлению качеством
+												td.date 9-10.2014
+												td.programms 
+													| 8 ПРОГРАММ 
+													a(href="#") (5 новых)
+											tr.item.hide
+												td.name
+													h3 Педагогика
+													p
+														a Курсы повышения квалификации
+													p 5 человека
+												td.post 
+													a(href="#") Методист
+												td.date 9-10.2014
+												td.programms 
+													| 11 ПРОГРАММ 
+													a(href="#") (2 новые)
+											tr.item.hide
+												td.name
+													h3 Управление качеством
+													p
+														a Стажировка
+													p 3 человека
+												td.post 
+													a(href="#") Специалист по управлению качеством
+												td.date 9-10.2014
+												td.programms 
+													| 8 ПРОГРАММ 
+													a(href="#") (5 новых)
+							.wbox-more.margn-side.table-items.margin-bottom
+								a(href="#") показать еще
+							.wbox-list-all
+								p
+									| Запросов:  
+									a(href="#") 125
+								a(href="#") Список всех образовательных программ
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Потребность в работниках
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-workers-need
+								.filter
+									.filter-table
+										.cell
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Направление подготовки
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Должность
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+								.table-wrap
+									table
+										thead
+											tr
+												td.name
+													| Должность 
+													a(href="#").sort
+												td.date Дата открытия
+												td.answers Отклики
+										tbody
+											tr
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date
+													p 10 октября 2014 (1 день)
+													p
+														span.sbblue Не срочно
+												td.answers 
+													| 8 ПРОГРАММ
+													div
+														a(href="#") (5 новых)
+											tr
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													| 8 ПРОГРАММ 
+													div
+														a(href="#") (5 новых)
+											tr
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													| 8 ПРОГРАММ
+											tr.item.hide
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													p
+														a Отдел контроля качества
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													| 8 ПРОГРАММ
+							.wbox-more.margn-side.table-items.margin-bottom
+								a(href="#") показать еще
+							.wbox-list-all
+								p
+									| Вакансий:  
+									a(href="#") 125
+								a(href="#").right Архив вакансий
+								a(href="#") Список всех образовательных программ
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Потребность в работниках
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-workers-need
+								.filter
+									.filter-table
+										.cell
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Направление подготовки
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+										.cell
+											.select-wrap
+												input(type="hidden" name="" value="")
+												.select
+													span.title Должность
+													span.arrow
+												ul.option-list
+													li(data-value="1") Начальник
+													li(data-value="2") Специалист
+													li(data-value="2") Рабочий
+													li(data-value="2") Человек с Большой буквы
+													li(data-value="2") Доброта
+								.table-wrap
+									table
+										thead
+											tr
+												td.employer
+													| Работадатель
+													a(href="#").sort
+												td.name Должность 
+												td.date Дата открытия
+												td.answers Отклики
+										tbody
+											tr
+												td
+													img(src="img/content/lgoo-sber.png", alt="")
+												td.name
+													h3
+														| Управление качеством
+														a(href="#").open-atlas-circle 
+													div
+														span.price 1 000 000 рублей
+												td.date
+													p 10 октября 2014 (1 день)
+													p
+														span.sbblue Не срочно
+												td.answers 
+													| 8 ПРОГРАММ
+													div
+														a(href="#") (5 новых)
+											tr
+												td
+													img(src="img/content/lgoo-sber.png", alt="")
+												td.name
+													h3
+														| Специалист по управлению качеством
+														a(href="#").open-atlas-circle 
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													| 8 ПРОГРАММ 
+													div
+														a(href="#") (5 новых)
+											tr
+												td
+													img(src="img/content/lgoo-sber.png", alt="")
+												td.name
+													h3 
+														| Управление качеством
+														a(href="#").open-atlas-circle 
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													| 8 ПРОГРАММ
+											tr.item.hide
+												td
+													img(src="img/content/lgoo-sber.png", alt="")
+												td.name
+													h3 Управление качеством
+														a(href="#").open-atlas-circle 
+													div
+														span.price 1 000 000 рублей
+												td.date 10 октября 2014 (1 день)
+												td.answers 
+													| 8 ПРОГРАММ
+							.wbox-more.margn-side.margin-bottom.table-items
+								a(href="#") показать еще
+							.wbox-list-all
+								p
+									| Вакансий:  
+									a(href="#") 125
+								a(href="#").right Архив вакансий
+								a(href="#") Список всех образовательных программ
+					//-----------------------------------------------
+					.wbox
+						.wbox-name
+							h2 Общая информация
+						.wbox-menu
+							a(href="#").hoverbg
+								.icon
+									.act
+						.wbox-content
+							.wbox-text-map
+								.text
+									h3.blue Служба занятости кусинского района
+									p <strong>Адрес:</strong><br> 1126135, Москва, Лефортовская набережная, 26/2
+									p <strong>Руководитель:</strong>  Садовничий Константин Константинович
+									p <strong>Краткое описание:</strong><br>Краткое описание вида деятельности. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения новых предложений.
+								.map
+									img(src="img/content/map-1.jpg", alt="")
+					//-----------------------------------------------
