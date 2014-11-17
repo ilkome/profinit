@@ -1577,6 +1577,9 @@ body {
 .graphbox .graph-content .ways ul li.active a {
   opacity: 0.7;
 }
+.graphbox .graph-content .ways ul li.disable a {
+  background: #b0b3ba;
+}
 .graphbox .graph-content .recomends {
   position: absolute;
   left: 30px;
@@ -1833,6 +1836,9 @@ body {
   width: 12px;
   height: 12px;
   margin-top: -3px;
+}
+.works-time .dots ul li.disable a {
+  background: #b0b3ba;
 }
 .career-item-pop .item {
   width: 400px;
