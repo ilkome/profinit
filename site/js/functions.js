@@ -335,6 +335,21 @@ $(document).ready(function() {
 	})
 
 
+	// Career graph show times
+	// ==================================================
+	$(".js-graph-times").on("click", function(e){
+		e.preventDefault()
+		var thisis = $(this).find(".switch-con");
+				
+		if(thisis.hasClass("right")) {
+			$(".graph-inside .element-time").fadeIn(300)
+		} else {
+			$(".graph-inside .element-time").fadeOut(300)
+		}
+	})
+
+
+	//
 	$(".range-income input").ionRangeSlider({
 		type: "double",
 		min: "10000",
