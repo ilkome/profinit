@@ -3596,12 +3596,7 @@ body {
   clear: both;
 }
 .wbox .wbox-welcome .text {
-  float: left;
-  padding-right: 520px;
-  width: 100%;
   box-sizing: border-box;
-  margin-right: -450px;
-  vertical-align: middle;
 }
 .wbox .wbox-welcome .text h3 {
   margin-bottom: 10px;
@@ -3617,10 +3612,13 @@ body {
 .wbox .wbox-welcome .text p.prof span {
   color: #3cb4c7;
 }
+.wbox .wbox-welcome .center {
+  text-align: center;
+  padding-left: 40px;
+}
 .wbox .wbox-welcome .prev {
+  display: inline-block;
   position: relative;
-  margin-right: 65px;
-  float: right;
   box-sizing: border-box;
   text-align: center;
   vertical-align: top;
@@ -4888,4 +4886,14 @@ body {
 }
 .remodal.popup-edit-width-big .ins {
   max-width: 1000px;
+}
+.row {
+  width: 100%;
+  display: table;
+}
+.col-2 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  box-sizing: border-box;
 }
