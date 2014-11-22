@@ -244,8 +244,9 @@ $(document).ready(function() {
 	$('.select-wrap .select').click(function() {
 		var select_wrap = $(this).closest('.select-wrap')
 		var option_list = select_wrap.find('.option-list')
+		var select_wrapHeight = $(this).outerHeight();
 		$(".select-wrap .select").removeClass("active")
-
+		
 		if (option_list.is(':visible')){
 			option_list.slideUp('fast')
 			$(this).removeClass('active')
@@ -253,7 +254,7 @@ $(document).ready(function() {
 			if ($('.select-wrap .option-list:visible').length){
 				$('.select-wrap .option-list:visible').hide()
 			}
-			option_list.slideDown('fast')
+			option_list.slideDown('fast').css({top: select_wrapHeight})
 			$(this).addClass('active')
 		}
 	})

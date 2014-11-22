@@ -387,13 +387,17 @@ button {
 }
 .select-wrap .select {
   position: relative;
-  height: 20px;
-  padding: 15px;
+  overflow: hidden;
+  min-height: 20px;
+  padding: 10px 30px 15px 15px;
   border: 2px solid #f0f0f0;
   border-radius: 7px;
   cursor: pointer;
   background: #fff;
-  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 25px;
+  line-height: 30px;
 }
 .select-wrap .select.active {
   border-radius: 7px 7px 0 0;
@@ -409,8 +413,9 @@ button {
   width: 13px;
   height: 7px;
   right: 20px;
-  top: 22px;
+  top: 50%;
   content: " ";
+  margin-top: -2px;
   background: url("../img/main/arrow-b-down.png") 0 0 no-repeat;
   -webkit-transition: 0.3s 0.01s ease;
           transition: 0.3s 0.01s ease;
@@ -421,7 +426,7 @@ button {
   z-index: 5;
   position: absolute;
   left: 0;
-  top: 54px;
+  top: 0px;
   width: 100%;
   box-sizing: border-box;
   border-radius: 0 0 7px 7px;
