@@ -2785,7 +2785,7 @@ body {
           transition: 0.3s 0.01s ease;
 }
 .wbox .wbox-educ-recommend .ratings a .icon .act {
-  display: inline-block;
+  display: none;
   width: 17px;
   height: 19px;
   background: url("../img/main/i-chart-a.png") no-repeat;
