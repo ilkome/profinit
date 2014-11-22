@@ -18,7 +18,7 @@
             hashTracking: true,
             closeOnConfirm: true,
             closeOnCancel: true,
-            closeOnEscape: true,
+            closeOnEscape: false,
             closeOnAnyClick: true
         },
 
