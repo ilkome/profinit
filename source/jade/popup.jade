@@ -46,10 +46,10 @@ html(lang="ru")
 						.action
 							a(href="#").remodal-cancel Закрыть
 				//-----------------------------------------------
-				.remodal.popup-edit(data-remodal-id="edit-my-profile")
+				.remodal(data-remodal-options="closeOnConfirm: false, closeOnCancel: false, closeOnAnyClick: false, closeOnEscape: false", data-remodal-id="edit-my-profile").popup-edit
 					a(href="#").close.remodal-cancel
 					.ins
-						h3 Редактировать мой профиль
+						h3 Редактировать мой профиль 1
 						table
 							tr
 								td
@@ -64,7 +64,7 @@ html(lang="ru")
 											span.title Мужской
 											span.arrow
 										ul.option-list
-											li(data-value="1") Женский
+											li(data-value="1") Женский Человек с Большой буквыЧеловек с Большой буквыЧеловек с Большой буквыЧеловек с Большой буквы
 											li(data-value="2") Мужской
 								td
 									.name Семейное положение
@@ -88,7 +88,7 @@ html(lang="ru")
 									.name Опишите себя
 									textarea(placeholder="Заполните") Большую роль в популяризации психодрамы сыграл институт социометрии, который генезис последовательно дает феноменологический онтогенез речи. Генезис жизненно понимает гештальт. Придерживаясь жестких принципов социального Дарвинизма, бессознательное индивидуально начинает возрастной стресс. Конформизм, иcходя из того, что аннигилирует контраст.
 						.action
-							a(href="#") Сохранить изменения
+							a(href="#").remodal-confirm Сохранить изменения
 				//-----------------------------------------------
 				.remodal.popup-edit(data-remodal-id="edit-my-profile-2")
 					a(href="#").close.remodal-cancel
